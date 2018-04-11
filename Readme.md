@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Романов](https://up.htmlacademy.ru/adaptive/14/user/272763).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Соломеин](https://up.htmlacademy.ru/htmlcss/20/tutors#tutor1640655).
 
 ---
 
