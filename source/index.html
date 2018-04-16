@@ -19,19 +19,19 @@
           Открыть меню
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html">
+            <li class="main-nav__item">
+              <a  class="main-nav__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">
+            <li class="main-nav__item">
+              <a  class="main-nav__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -111,23 +111,23 @@
         </p>
         <table class="success-story__results">
           <tr class="success-story__results-headings">
-            <th>
+            <th class="success-story__results-heading">
               Снижение веса
             </th>
-            <th>
+            <th class="success-story__results-heading">
               Затрачено времени
             </th>
           </tr>
-          <tr class="success-stroy__results-data">
-            <td>
+          <tr class="success-story__results-data">
+            <td class="success-story__results-quantity">
               5 кг
             </td>
-            <td>
+            <td class="success-story__results-quantity">
               60 дней
             </td>
           </tr>
-          <tr class="success-story__resulys-cost">
-            <td colspan="2">
+          <tr class="success-story__results-cost">
+            <td class="success-story__results-total" colspan="2">
               Затраты на питание:15 000 руб.
             </td>
           </tr>
@@ -135,10 +135,10 @@
         <div class="success-story__before-after">
           <img class="success-story_before-img" src="http://placehold.it/311x232" width="311" height="232" alt="Фото кота до изменения программы питания">
           <form class="success-story__before-after-switch" action="#" method="get">
-            <label for="before-switch">Было</label>
-            <input id="before-switch" type="radio" name="before-after__switch" value="before" checked>
-            <label for="after-switch">Стало</label>
-            <input id="after-switch" type="radio" name="before-after__switch" value="after">
+            <label class="success-story__before-label" for="before-switch">Было</label>
+            <input class="success-story__before-switch" id="before-switch" type="radio" name="before-after__switch" value="before" checked>
+            <label class="success-story__after-label" for="after-switch">Стало</label>
+            <input class="success-story__after-switch" id="after-switch" type="radio" name="before-after__switch" value="after">
           </form>
         </div>
       </article>
@@ -150,9 +150,9 @@
         <h2 class="visually-hidden">
           Как нас найти
         </h2>
-        <b class="contacts__invitation">
+        <p class="contacts__invitation">
           Приглашаем к сотрудничеству дилеров!
-        </b>
+        </p>
         <p class="contacts__adress">
           Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
