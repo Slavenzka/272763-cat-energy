@@ -1,0 +1,102 @@
+.site-catalogs__item:first-of-type {
+  margin: 0;
+  margin-top: 22px;
+}
+
+.site-catalogs__item:last-of-type {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.site-catalogs__item {
+  padding: 30px 20px 21px 20px;
+  background-color: $background__aux;
+}
+
+.site-catalogs__title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 71px;
+  font-family: $font-family__headings;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 2px;
+    width: 50px;
+    height: 50px;
+    background-color: $background__elements;
+    border-radius: 50%;
+  }
+
+  &--slim::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    width: 35px;
+    height: 49px;
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+
+  &--gain::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -7px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+  }
+}
+
+.site-catalogs__intro {
+  margin: 0;
+  margin-top: 29px;
+  padding: 0;
+  padding-bottom: 22px;
+  font-family: $font-family__text;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__text;
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+
+.site-catalogs__link {
+  position: relative;
+  display: block;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  width: 51%;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 11px;
+    top: 2px;
+    right: 1px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+  }
+}
+
+.site-catalogs__item:last-of-type .site-catalogs__link::before {
+  right: 3px;
+}

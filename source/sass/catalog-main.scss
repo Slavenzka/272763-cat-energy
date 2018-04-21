@@ -1,0 +1,32 @@
+.catalog-main__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-main__item-link {
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-main__show-all-tip {
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-transform: uppercase;
+}
+
+.catalog-main__show-all-slogan {
+  font-family: $font-family__text;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $font-color__text;
+}
