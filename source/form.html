@@ -28,17 +28,23 @@
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">
-                Главная
+                <div class="container">
+                  Главная
+                </div>
               </a>
             </li>
             <li class="main-nav__item">
               <a  class="main-nav__link" href="catalog.html">
-                Каталог продукции
+                <div class="container">
+                  Каталог продукции
+                </div>
               </a>
             </li>
             <li class="main-nav__item">
               <a  class="main-nav__link main-nav__item--active">
-                Подбор программы
+                <div class="container">
+                  Подбор программы
+                </div>
               </a>
             </li>
           </ul>
@@ -61,15 +67,15 @@
               <label for="name">
                 Имя:*
               </label>
-              <input class="program-request__cat-name" id="name" type="text" name="cat-name" placeholder="Барсик" required>
+              <input class="program-request__cat-name" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
               <label for="weight">
                 Вес (кг):*
               </label>
-              <input class="program-request__cat-weight" id="weight" type="number" name="cat-weight" placeholder="7" required>
+              <input class="program-request__cat-weight" id="cat-weight" type="number" name="cat-weight" placeholder="7" required>
               <label for="age">
                 Возраст (лет):
               </label>
-              <input class="program-request__cat-age" id="age" type="number" name="cat-age" placeholder="7">
+              <input class="program-request__cat-age" id="cat-age" type="number" name="cat-age" placeholder="7">
             </fieldset>
             <fieldset class="program-request__type">
               <legend class="visually-hidden">
@@ -95,11 +101,11 @@
               <label for="mail">
                 E-mail:*
               </label>
-              <input class="program-request__contacts-email" id="mail" type="email" name="owner-mail" placeholder="kuklachev@gmail.com">
+              <input class="program-request__contacts-email" id="owner-mail" type="email" name="owner-mail" placeholder="kuklachev@gmail.com">
               <label for="phone">
                 Телефон:*
               </label>
-              <input class="program-request__contacts-phone" id="phone" type="tel" name="owner-phone" placeholder="8(960)900-60-90">
+              <input class="program-request__contacts-phone" id="owner-phone" type="tel" name="owner-phone" placeholder="8(960)900-60-90">
             </fieldset>
             <fieldset class="program-request__owner-comments">
               <legend>
@@ -113,19 +119,19 @@
               <legend>
                 Дополнительно
               </legend>
-              <input class="program-request__option-shugar" id="shugar" type="checkbox" name="option-shugar" checked>
+              <input class="program-request__option" id="option-shugar" type="checkbox" name="option-shugar" checked>
               <label for="shugar">
                 Сахарозаменитель
               </label>
-              <input class="program-request__option-water" id="water" type="checkbox" name="option-water">
+              <input class="program-request__option" id="option-water" type="checkbox" name="option-water">
               <label for="water">
                 Питьевая вода
               </label>
-              <input class="program-request__option-milk" id="milk" type="checkbox" name="option-milk">
+              <input class="program-request__option" id="option-milk" type="checkbox" name="option-milk">
               <label for="milk">
                 Молоко
               </label>
-                <input class="program-request__option-vitamins" id="vitamins" type="checkbox" name="option-vitamins">
+                <input class="program-request__option" id="option-vitamins" type="checkbox" name="option-vitamins">
               <label for="vitamins">
                 Витамины
               </label>
