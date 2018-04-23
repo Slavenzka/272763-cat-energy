@@ -18,11 +18,22 @@ body {
 }
 
 .page-wrapper {
-  width: 320px;
+  width: $width__mobile;
   margin: 0 auto;
 }
 
 .container {
   margin: 0;
   padding: 0 20px;
+}
+
+@media (min-width: $width__tablet) {
+
+  .page-wrapper {
+     width: $width__tablet;
+  }
+
+  container {
+    padding: 0 30px;
+  }
 }
