@@ -1,0 +1,65 @@
+.program-request__title {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family__headings;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $font-color__heading;
+}
+
+.program-request__invitation {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family__headings;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-transform: uppercase;
+}
+
+.program-request__form fieldset {
+  border: 0;
+}
+
+.program-request__form label {
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-transform: uppercase;
+}
+
+.program-request__cat-name::placeholder,
+.program-request__cat-weight::placeholder,
+.program-request__cat-age::placeholder,
+.program-request__contacts-email::placeholder,
+.program-request__contacts-phone::placeholder,
+textarea {
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__text;
+  text-transform: uppercase;
+}
+
+.program-request__contacts legend,
+.program-request__owner-comments legend,
+.program-request__options legend {
+  font-family: $font-family__headings;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $font-color__heading;
+}
+
+.program-request__required-fields {
+  font-family: $font-family__text;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $font-color__text;
+}

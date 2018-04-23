@@ -1,0 +1,113 @@
+.success-story {
+  margin: 0;
+  margin-top: 46px;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 34px;
+  background-color: $background__aux;
+}
+
+.success-story__title {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family__headings;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $font-color__heading;
+}
+
+.success-story__description {
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+  padding-right: 10px;
+  font-family: $font-family__text;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__text;
+}
+
+.success-story__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.success-story__results {
+  position: relative;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+  width: 124px;
+  box-sizing: border-box;
+}
+
+.success-story__results-heading {
+  position: absolute;
+  bottom: -15px;
+  left: 18px;
+  margin: 0;
+  padding: 0 5px;
+  width: 87px;
+  box-sizing: border-box;
+  font-family: $font-family__text;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: $font-color__text;
+  text-transform: lowercase;
+  text-align: center;
+  background-color: $background__aux;
+}
+
+.success-story__results-data {
+  margin: 0;
+  padding: 13px 0 17px 0;
+  font-family: $font-family__headings;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 3px;
+}
+
+.success-story__results-total {
+  margin: 0;
+  margin-top: 34px;
+  padding: 0;
+  font-family: $font-family__headings;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.success-story__before-after {
+  margin: 0;
+  margin-top: 34px;
+  padding: 0;
+}
+
+.success-story__switch {
+  display: none;
+}
+
+.success-story__label {
+  margin-top: 29px;
+  margin-right: -4px;
+  display: inline-block;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-transform: uppercase;
+  text-align: center;
+}

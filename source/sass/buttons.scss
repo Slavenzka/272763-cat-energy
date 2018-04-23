@@ -1,0 +1,30 @@
+.button {
+  display: block;
+  padding: 11px 20px 11px 20px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: $font-family__headings;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  background-color: $background__elements;
+  border: 0;
+}
+
+.button--program {
+  margin-top: 135px;
+}
+
+.button--show-all {
+  font-family: $font-family__headings;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__heading;
+  background-color: rgb(242, 242, 242);
+}
