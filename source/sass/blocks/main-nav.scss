@@ -1,0 +1,146 @@
+.main-nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: $font-family__headings;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: $font-color__heading;
+  text-transform: uppercase;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  text-align: center;
+  border-top: 1px solid rgb(230, 230, 230);
+
+  &:last-of-type {
+    border-bottom: 1px solid rgb(230, 230, 230);
+  }
+}
+
+.main-nav__link {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding: 22.5px 0;
+  color: $font-color__heading;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $width__tablet) {
+
+  .main-nav {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+
+  }
+
+  .main-nav__list {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0 $padding__tablet;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .main-nav__item {
+    border: 0;
+
+    &:last-of-type {
+      border: 0;
+    }
+  }
+
+  .main-nav__item:not(:first-of-type) {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-left: 36px;
+  }
+
+  .main-nav__item--active {
+    margin-right: -1px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid rgb(104, 183, 56);
+  }
+
+  .main-nav__link {
+    padding: 0;
+  }
+
+  .main-nav__link > .container {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $width__desktop) {
+
+  .main-nav {
+    width: 720px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  .main-nav__list {
+    margin: 0;
+    margin-left: 402px;
+    padding: 0;
+    padding-top: 73px;
+    padding-left: 132px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    background: rgb(100, 168, 59);
+  }
+
+  .main-nav__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav__item:not(:last-of-type) {
+    padding: 0;
+    margin: 0;
+    margin-right: 36px;
+  }
+
+  .main-nav__item:last-of-type {
+    padding: 0;
+    margin: 0;
+    margin-left: -3px;
+  }
+
+  .main-nav__link {
+    color: rgb(255, 255, 255);
+  }
+
+  .main-nav__link > .container {
+    margin: 0;
+//    padding: 0;
+  }
+
+  .main-nav__list .main-nav__item--active {
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+}

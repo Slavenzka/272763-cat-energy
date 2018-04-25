@@ -28,3 +28,31 @@
   color: $font-color__heading;
   background-color: rgb(242, 242, 242);
 }
+
+@media (min-width: $width__tablet) {
+
+  .button--program {
+    position: relative;
+    padding: 15px 28px 17px 25px;
+    margin: 0px 90px 507px 89px;
+    display: inline-block;
+    width: auto;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $width__desktop) {
+
+  .button--program {
+    position: relative;
+    padding: 15px 28px 17px 25px;
+    margin: 5px 90px 188px 80px;
+    display: inline-block;
+    width: auto;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 1;
+  }
+}

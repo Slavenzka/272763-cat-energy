@@ -1,0 +1,244 @@
+.success-story {
+  margin: 0;
+  margin-top: 46px;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 34px;
+  background-color: $background__aux;
+}
+
+.success-story__title {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family__headings;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $font-color__heading;
+}
+
+.success-story__description {
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+  padding-right: 10px;
+  font-family: $font-family__text;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__text;
+}
+
+.success-story__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.success-story__results {
+  position: relative;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+  width: 124px;
+  box-sizing: border-box;
+}
+
+.success-story__results-heading {
+  position: absolute;
+  bottom: -15px;
+  left: 18px;
+  margin: 0;
+  padding: 0 5px;
+  width: 87px;
+  box-sizing: border-box;
+  font-family: $font-family__text;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: $font-color__text;
+  text-transform: lowercase;
+  text-align: center;
+  background-color: $background__aux;
+}
+
+.success-story__results-data {
+  margin: 0;
+  padding: 13px 0 17px 0;
+  font-family: $font-family__headings;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 3px;
+}
+
+.success-story__results-total {
+  margin: 0;
+  margin-top: 34px;
+  margin-left: 47px;
+  padding: 0;
+  font-family: $font-family__headings;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.success-story__before-after {
+  margin: 0;
+  margin-top: 34px;
+  padding: 0;
+}
+
+.success-story__switch {
+  display: none;
+}
+
+.success-story__label {
+  margin-top: 29px;
+  margin-right: -4px;
+  display: inline-block;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $font-color__heading;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $width__tablet) {
+
+  .success-story {
+    margin-top: 27px;
+    background-color: $background__main;
+  }
+
+  .success-story__title {
+    font-size: 60px;
+  }
+
+  .success-story__description {
+    margin-top: 65px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .success-story__wrapper {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: 27px;
+  }
+
+  .success-story__results {
+    display: flex;
+    flex-direction: column;
+    width: 162px;
+    box-sizing: border-box;
+  }
+
+  .success-story__results + .success-story__results {
+    margin-left: 42px;
+  }
+
+  .success-story__results-heading {
+    order: 2;
+    position: static;
+    align-self: center;
+    margin-top: -9px;
+    margin: -9px 0px 0;
+    padding: 0 8px;
+    width: auto;
+    box-sizing: content-box;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $background__main;
+  }
+
+  .success-story__results-data {
+    order: 1;
+    padding: 14px 0 19px 0;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .success-story__results-total {
+    width: 192px;
+    margin-top: 32px;
+    margin-left: 150px;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: right;
+  }
+
+  .success-story__before-after {
+    padding-bottom: 434px;
+    background-color: $background__aux;
+  }
+}
+
+@media (min-width: $width__desktop) {
+
+  .success-story {
+    margin-top: 49px;
+    padding-bottom: 0;
+  }
+
+  .success-story__wrapper-desktop {
+    margin-top: 75px;
+    padding: 0 110px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: $background__aux;
+  }
+
+  .success-story__wrapper-desktop > .container {
+    padding: 0;
+    width: 50%;
+  }
+
+  .success-story__title {
+    background-color: white;
+  }
+
+  .success-story__description {
+    margin-top: 71px;
+    padding: 0 171px 0 0;
+  }
+
+  .success-story__wrapper {
+    flex-wrap: wrap;
+    margin-top: 43px;
+  }
+
+  .success-story__results-heading {
+    background-color: $background__aux;
+  }
+
+  .success-story__results-total {
+    width: 100%;
+    margin-top: 51px;
+    margin-left: 0;
+    text-align: left;
+
+    & span {
+      word-spacing: 60px;
+    }
+  }
+
+  .success-story__before-after {
+    width: 50%;
+  }
+
+  .success-story__before-after {
+    padding-bottom: 185px;
+  }
+}

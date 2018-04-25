@@ -24,5 +24,27 @@ body {
 
 .container {
   margin: 0;
-  padding: 0 20px;
+  padding: 0 $padding__mobile;
+}
+
+@media (min-width: $width__tablet) {
+
+  .page-wrapper {
+    width: $width__tablet;
+  }
+
+  .container {
+    padding: 0 $padding__tablet;
+  }
+}
+
+@media (min-width: $width__desktop) {
+
+ .page-wrapper {
+    width: $width__desktop;
+  }
+
+  .container {
+    padding: 0 $padding__desktop;
+  }
 }
