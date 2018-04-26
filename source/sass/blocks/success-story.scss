@@ -115,7 +115,6 @@
 }
 
 @media (min-width: $width__tablet) {
-
   .success-story {
     margin-top: 27px;
     background-color: $background__main;
@@ -153,7 +152,7 @@
     position: static;
     align-self: center;
     margin-top: -9px;
-    margin: -9px 0px 0;
+    margin: -9px 0 0;
     padding: 0 8px;
     width: auto;
     box-sizing: content-box;
@@ -185,7 +184,6 @@
 }
 
 @media (min-width: $width__desktop) {
-
   .success-story {
     margin-top: 49px;
     padding-bottom: 0;
@@ -236,9 +234,6 @@
 
   .success-story__before-after {
     width: 50%;
-  }
-
-  .success-story__before-after {
     padding-bottom: 185px;
   }
 }

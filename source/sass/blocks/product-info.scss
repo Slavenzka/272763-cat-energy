@@ -44,7 +44,6 @@
 }
 
 @media (min-width: $width__tablet) {
-
   .product-info {
     margin-top: 45px;
   }
@@ -90,7 +89,7 @@
   }
 
   .product-info__item:not(:last-of-type) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .product-info__item:nth-of-type(2n) {
@@ -99,7 +98,6 @@
 }
 
 @media (min-width: $width__desktop) {
-
   .product-info__title {
     margin-top: 73px;
   }
