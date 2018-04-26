@@ -2,7 +2,6 @@
   display: block;
   padding: 11px 20px 11px 20px;
   margin: 0;
-  width: 100%;
   box-sizing: border-box;
   font-family: $font-family__headings;
   font-size: 14px;
@@ -33,12 +32,19 @@
   .button--program {
     position: relative;
     padding: 15px 28px 17px 25px;
-    margin: 0 90px 507px 89px;
-    display: inline-block;
-    width: auto;
+    margin: 0 90px 0 89px;
     font-size: 20px;
     line-height: 20px;
     z-index: 1;
+  }
+
+  .button--submit {
+    margin: 0;
+    width: 50%;
+  }
+
+  .button--optional {
+    width: 100%;
   }
 }
 
@@ -46,7 +52,7 @@
   .button--program {
     position: relative;
     padding: 15px 28px 17px 25px;
-    margin: 5px 90px 188px 80px;
+    margin: 5px 90px 0 80px;
     display: inline-block;
     width: auto;
     font-size: 20px;

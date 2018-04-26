@@ -41,6 +41,10 @@
 }
 
 @media (min-width: $width__tablet) {
+  .program-selection {
+    padding-bottom: 507px;
+  }
+
   .program-selection__wrapper {
     padding-top: 20px;
     padding-bottom: 48px;
@@ -76,6 +80,10 @@
 }
 
 @media (min-width: $width__desktop) {
+  .program-selection {
+    padding-bottom: 188px;
+  }
+
   .program-selection__wrapper {
     margin-top: -113px;
     padding-top: 192px;

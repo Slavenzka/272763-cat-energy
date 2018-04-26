@@ -17,32 +17,22 @@ body {
   font-size: 0;
 }
 
-.page-wrapper {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .container {
-  margin: 0;
+  margin: 0 auto;
   padding: 0 $padding__mobile;
+  max-width: $width__mobile;
 }
 
 @media (min-width: $width__tablet) {
-  .page-wrapper {
-    width: $width__tablet;
-  }
-
   .container {
     padding: 0 $padding__tablet;
+    max-width: $width__tablet;
   }
 }
 
 @media (min-width: $width__desktop) {
-  .page-wrapper {
-    width: $width__desktop;
-  }
-
   .container {
     padding: 0 $padding__desktop;
+    max-width: $width__desktop;
   }
 }

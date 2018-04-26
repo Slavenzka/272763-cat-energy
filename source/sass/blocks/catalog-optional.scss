@@ -26,6 +26,7 @@
 
 @media (min-width: $width__tablet) {
   .catalog-optional__title {
+    width: 100%;
     font-size: 36px;
     line-height: 36px;
   }
@@ -45,10 +46,7 @@
   .catalog-optional {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .catalog-optional__title {
-    width: 100%;
+    justify-content: space-between;
   }
 
   .catalog-optional__list {
