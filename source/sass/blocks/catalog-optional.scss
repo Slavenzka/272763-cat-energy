@@ -23,3 +23,42 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+@media (min-width: $width__tablet) {
+
+  .catalog-optional__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .catalog-optional__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog-optional__item-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+
+  .catalog-optional {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog-optional__title {
+    width: 100%;
+  }
+
+  .catalog-optional__list {
+    width: 895 / 1220 * 100%;
+  }
+
+  .catalog-optional__item {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}

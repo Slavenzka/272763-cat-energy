@@ -13,3 +13,16 @@
   color: rgb(255, 255, 255);
   text-align: center;
 }
+
+@media (min-width: $width__desktop) {
+
+  .order-all {
+    width: 245 / 1220 * 100%;
+    margin-left: 6.557%;
+  }
+
+  .order-all__description {
+    margin: 0;
+    padding: 0;
+  }
+}
