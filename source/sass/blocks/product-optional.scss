@@ -1,0 +1,15 @@
+.product-optional {
+  font-family: $font-family__text;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $font-color__text;
+}
+
+@media (min-width: $width__tablet) {
+  .product-optional {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

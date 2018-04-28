@@ -1,0 +1,24 @@
+.footer-main {
+  background-color: $background__main;
+}
+
+.footer-main__content {
+  background-color: $background__aux;
+}
+
+.footer-main__logo {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  font-size: 28px;
+  text-align: center;
+  background-color: $background__aux;
+}
+
+@media (min-width: $width__tablet) {
+  .footer-main__content .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

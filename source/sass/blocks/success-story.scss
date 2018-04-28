@@ -33,6 +33,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .success-story__results {
@@ -79,6 +80,7 @@
 .success-story__results-total {
   margin: 0;
   margin-top: 34px;
+  margin-left: 47px;
   padding: 0;
   font-family: $font-family__headings;
   font-size: 14px;
@@ -110,4 +112,122 @@
   color: $font-color__heading;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: $width__tablet) {
+  .success-story {
+    margin-top: 27px;
+    background-color: $background__main;
+  }
+
+  .success-story__title {
+    font-size: 60px;
+  }
+
+  .success-story__description {
+    margin-top: 65px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .success-story__wrapper {
+    justify-content: space-between;
+    margin-top: 27px;
+  }
+
+  .success-story__results {
+    display: flex;
+    flex-direction: column;
+    width: 162px;
+    box-sizing: border-box;
+  }
+
+  .success-story__results + .success-story__results {
+    margin-left: -120px;
+  }
+
+  .success-story__results-heading {
+    order: 2;
+    position: static;
+    align-self: center;
+    margin: -9px 0 0;
+    padding: 0 8px;
+    width: auto;
+    box-sizing: content-box;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $background__main;
+  }
+
+  .success-story__results-data {
+    order: 1;
+    padding: 14px 0 19px 0;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .success-story__results-total {
+    width: 192px;
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: right;
+  }
+
+  .success-story__before-after {
+    padding-bottom: 434px;
+    background-color: $background__aux;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .success-story {
+    margin-top: 49px;
+    padding-bottom: 0;
+  }
+
+  .success-story__wrapper-desktop {
+    margin-top: 75px;
+    padding: 0 110px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: $background__aux;
+  }
+
+  .success-story__title {
+    background-color: white;
+  }
+
+  .success-story__description {
+    margin-top: 71px;
+    padding: 0 171px 0 0;
+  }
+
+  .success-story__wrapper {
+    width: 50%;
+    flex-wrap: wrap;
+    margin-top: 43px;
+  }
+
+  .success-story__results-heading {
+    background-color: $background__aux;
+  }
+
+  .success-story__results-total {
+    width: 100%;
+    margin-top: 51px;
+    margin-left: 0;
+    text-align: left;
+
+    & span {
+      word-spacing: 60px;
+    }
+  }
+
+  .success-story__before-after {
+    width: 50%;
+    padding-bottom: 185px;
+    background: red;
+  }
 }

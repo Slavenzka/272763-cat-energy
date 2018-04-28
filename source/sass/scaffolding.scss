@@ -17,12 +17,22 @@ body {
   font-size: 0;
 }
 
-.page-wrapper {
-  width: 320px;
+.container {
   margin: 0 auto;
+  padding: 0 $padding__mobile;
+  max-width: $width__mobile;
 }
 
-.container {
-  margin: 0;
-  padding: 0 20px;
+@media (min-width: $width__tablet) {
+  .container {
+    padding: 0 $padding__tablet;
+    max-width: $width__tablet;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .container {
+    padding: 0 $padding__desktop;
+    max-width: $width__desktop;
+  }
 }
