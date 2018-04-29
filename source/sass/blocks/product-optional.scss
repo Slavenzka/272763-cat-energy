@@ -1,9 +1,24 @@
 .product-optional {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100%;
   font-family: $font-family__text;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
   color: $font-color__text;
+  border-collapse: collapse;
+}
+
+.product-optional__data-ammount {
+  padding: 0;
+  width: 50%;
+}
+
+.product-optional__data-price {
+  padding: 0;
+  width: 50%;
+  text-align: right;
 }
 
 @media (min-width: $width__tablet) {

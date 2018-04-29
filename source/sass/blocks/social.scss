@@ -1,12 +1,13 @@
 .social {
   margin: 0;
-  margin-top: 22px;
-  margin-bottom: 40px;
   padding: 0;
+  min-height: 62px;
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
+  border-top: 1px solid rgb(217, 217, 217);
+  border-bottom: 1px solid rgb(217, 217, 217);
 }
 
 .social__item {
@@ -30,7 +31,7 @@
 
   &--vk::before {
     left: -2px;
-    top: 4px;
+    top: -5px;
     width: 22px;
     height: 12px;
     background-image: url("../img/icon-vk-mobile.svg");
@@ -38,13 +39,14 @@
 
   &--instagram::before {
     left: -8px;
-    top: 2px;
+    top: -7px;
     width: 16px;
     height: 16px;
     background-image: url("../img/icon-insta-mobile.svg");
   }
 
   &--fb::before {
+    top: -9px;
     right: 7px;
     width: 10px;
     height: 19px;

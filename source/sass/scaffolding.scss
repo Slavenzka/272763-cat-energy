@@ -21,6 +21,7 @@ body {
   margin: 0 auto;
   padding: 0 $padding__mobile;
   max-width: $width__mobile;
+  box-sizing: border-box;
 }
 
 @media (min-width: $width__tablet) {
