@@ -53,3 +53,9 @@
     background-image: url("../img/icon-fb-mobile.svg");
   }
 }
+
+@media (min-width: $width__tablet) {
+  .social {
+    border: 0;
+  }
+}
