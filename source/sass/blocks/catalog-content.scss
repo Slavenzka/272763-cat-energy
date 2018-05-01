@@ -19,15 +19,12 @@
 }
 
 @media (min-width: $width__tablet) {
-  .catalog-content__title {
-    margin-bottom: 165px;
-  }
-
   .catalog-content__wrapper {
     outline: none;
   }
 
   .catalog-content__title {
+    margin-bottom: 165px;
     margin-top: 50px;
     font-size: 60px;
     line-height: 60px;

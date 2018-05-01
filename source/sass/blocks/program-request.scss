@@ -95,7 +95,7 @@ textarea {
   border: 1px solid rgb(230, 230, 230);
 }
 
-.program-request__type .container{
+.program-request__type .container {
   padding: 26px 0 26px 65px;
   margin-top: 9px;
   border: 1px solid rgb(237, 237, 237);
@@ -343,7 +343,6 @@ textarea {
   }
 
   .program-request__type label {
-
     &::before {
       top: -9px;
       left: -60px;
@@ -484,7 +483,6 @@ textarea {
   }
 
   .program-request__options-wrapper label {
-
     &::before {
       content: "";
       position: absolute;
@@ -548,7 +546,6 @@ textarea {
   }
 
   .program-request__type label {
-
     &::before {
       top: -9px;
       left: -59px;
@@ -566,7 +563,7 @@ textarea {
 
   .program-request__contacts legend {
     margin-top: 50px;
-    padding-left: 0px;
+    padding-left: 0;
 
     &::before {
       top: 21px;
@@ -605,7 +602,7 @@ textarea {
   }
 
   .program-request__contacts-item-wrapper:last-of-type {
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 78px;
   }
 
@@ -692,5 +689,4 @@ textarea {
     margin-left: 19px;
     width: 25%;
   }
-
 }

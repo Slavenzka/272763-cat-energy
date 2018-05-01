@@ -204,14 +204,14 @@
 }
 
 @media (min-width: $width__tablet) and (max-width: $width__desktop) {
-  .catalog-main__item:not(:first-child):not(:nth-child(2)){
+  .catalog-main__item:not(:first-child):not(:nth-child(2){
     margin-top: 140px;
   }
 }
 
 @media (min-width: $width__desktop) {
   .catalog-main__list {
-    align-items:stretch;
+    align-items: stretch;
   }
 
   .catalog-main__item {
@@ -224,7 +224,7 @@
     width: 245px;
   }
 
-  .catalog-main__item:not(:first-child):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)){
+  .catalog-main__item:not(:first-child):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)) {
     margin-top: 142px;
   }
 

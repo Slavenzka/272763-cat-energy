@@ -130,7 +130,6 @@
 
 @media (max-width: $width__tablet) {
   .success-story__label {
-
     &:first-of-type::before {
       content: "";
       position: absolute;
@@ -302,7 +301,7 @@
     &:last-of-type {
       margin: 0;
       padding: 0;
-      margin-left: 0px;
+      margin-left: 0;
     }
   }
 }
@@ -403,10 +402,6 @@
         0 0 0 13px rgb(205, 205, 205),
         0 2px 2px 14px rgba(0, 0, 0, 0.15);
     }
-  }
-
-  .success-story__label {
-
   }
 
   .success-story__before-after {
