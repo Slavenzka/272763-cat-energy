@@ -204,7 +204,7 @@
 }
 
 @media (min-width: $width__tablet) and (max-width: $width__desktop) {
-  .catalog-main__item:not(:first-child):not(:nth-child(2){
+  .catalog-main__item:not(:first-child):not(:nth-child(2)) {
     margin-top: 140px;
   }
 }
