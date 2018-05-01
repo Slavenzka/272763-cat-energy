@@ -1,13 +1,14 @@
 .catalog-optional__title {
   position: relative;
+  display: inline-block;
   margin: 0;
-  padding: 29px 0 34px 0;
-  width: 247 / 280 * 100%;
+  padding: 29px 22px 35px 0;
   box-sizing: border-box;
   font-family: $font-family__headings;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  vertical-align: middle;
   color: $font-color__heading;
 
   &::before {
@@ -24,6 +25,7 @@
 
 .catalog-optional__list {
   margin: 0;
+  margin-top: -1px;
   margin-bottom: 39px;
   padding: 0;
   list-style: none;
@@ -52,18 +54,56 @@
 }
 
 @media (min-width: $width__tablet) {
+  .catalog-optional__list {
+    border-bottom: none;
+  }
+
   .catalog-optional__title {
-    width: 100%;
+    width: auto;
+    display: inline-block;
+    margin-top: 37px;
+    margin-bottom: 46px;
+    padding-left: 37px;
+    padding-right: 37px;
     font-size: 36px;
     line-height: 36px;
+    vertical-align: middle;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      margin-top: 1px;
+      width: 100vw;
+      height: 3px;
+      background-color: $background__elements;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 51%;
+      right: 100.4%;
+      width: 100vw;
+      height: 3px;
+      background-color: $background__elements;
+    }
   }
 
   .catalog-optional__item {
+    padding: 26px 36px 27px 37px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    border: 1px solid rgba(205, 205, 205, 0.5);
   }
 
-  .catalog-optional__item-title {
+  .catalog-optional__item:not(:first-of-type) {
+    margin-top: -1px;
+  }
+
+  .catalog-optional__item-link {
     font-size: 20px;
     line-height: 20px;
   }
@@ -71,8 +111,31 @@
 
 @media (min-width: $width__desktop) {
   .catalog-optional {
+    margin-bottom: 47px;
+  }
+
+  .catalog-optional__title {
+    padding: 0;
+    margin-top: 75px;
+
+    &::before {
+      top: 59%;
+      left: 110.7%;
+      margin-top: 1px;
+      width: 100vw;
+    }
+
+    &::after {
+      top: 60%;
+      right: 111.6%;
+      width: 100vw;
+    }
+  }
+
+  .catalog-optional__wrapper {
+    margin-top: 35px;
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: space-between;
   }
 
@@ -81,7 +144,20 @@
   }
 
   .catalog-optional__item {
+    margin: 0;
+    padding: 15px 0 16px 0;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 1px solid rgb(205, 205, 205);
+    border-right: 0;
+    border-bottom: 1px solid rgb(205, 205, 205);
+    border-left: 0;
+  }
+
+  .catalog-optional__item-title {
+    margin-top: 10px;
+    margin-right: 40px;
+    width: 285px;
   }
 }

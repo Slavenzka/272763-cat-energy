@@ -16,8 +16,8 @@
 }
 
 .button--order {
-  margin-top: 1px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 0 10px 0;
+  width: 100%;
   font-size: 16px;
   line-height: 20px;
 }
@@ -29,6 +29,7 @@
 .button--show-all {
   margin-top: 1px;
   padding: 10px 20px 10px 20px;
+  width: 100%;
   font-family: $font-family__headings;
   font-size: 16px;
   line-height: 20px;
@@ -56,11 +57,17 @@
 
   .button--submit {
     margin: 0;
-    width: 50%;
+    margin-left: 41px;
+    padding: 15px 20px 17px 20px;
+    width: 283px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .button--optional {
     width: 100%;
+    margin-top: 22px;
   }
 }
 
@@ -77,6 +84,12 @@
   }
 
   .button--optional {
-    width: 245 / 1220 * 100%;
+    width: 245px;
+    margin-top: 0;
+  }
+
+  .button--submit {
+    margin-left: 1px;
+    width: 568px;
   }
 }

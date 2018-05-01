@@ -10,7 +10,7 @@
 
   <body>
 
-    <header class="header-main">
+    <header class="header-main header-main--light">
       <div class="container">
         <div class="header-main__wrapper">
           <a class="header-main__logo header-main__title-link">
@@ -25,7 +25,7 @@
           <button class="menu__toggle" type="button">
             Открыть меню
           </button>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--light">
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">
@@ -33,7 +33,7 @@
                 </a>
               </li>
               <li class="main-nav__item">
-                <a  class="main-nav__link"  href="catalog.html">
+                <a  class="main-nav__link" href="catalog.html">
                   Каталог продукции
                 </a>
               </li>
@@ -58,66 +58,70 @@
         </p>
       </div>
         <form class="program-request__form" action="#" method="post">
-          <fieldset class="program-request__cat">
-            <legend class="visually-hidden">
-              Укажите сведения о питомце
-            </legend>
-            <div class="container">
-              <div class="program-request__cat-item-wrapper">
-                <label for="name">
-                  Имя:*
+          <div class="program-request__wrapper">
+            <fieldset class="program-request__cat">
+              <legend class="visually-hidden">
+                Укажите сведения о питомце
+              </legend>
+              <div class="container">
+                <div class="program-request__cat-item-wrapper">
+                  <label for="name">
+                    Имя:*
+                  </label>
+                  <input class="program-request__cat-name" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
+                </div>
+                <div class="program-request__cat-item-wrapper">
+                  <label for="weight">
+                    Вес (кг):*
+                  </label>
+                  <input class="program-request__cat-weight" id="cat-weight" type="number" name="cat-weight" placeholder="7" required>
+                </div>
+                <div class="program-request__cat-item-wrapper">
+                <label for="age">
+                  Возраст (лет):
                 </label>
-                <input class="program-request__cat-name" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
+                <input class="program-request__cat-age" id="cat-age" type="number" name="cat-age" placeholder="7">
+                </div>
               </div>
-              <div class="program-request__cat-item-wrapper">
-                <label for="weight">
-                  Вес (кг):*
+            </fieldset>
+            <fieldset class="program-request__type">
+              <legend class="visually-hidden">
+                Выберите тип программы
+              </legend>
+              <div class="container">
+                <input class="program-request__type-slim" id="slim" type="radio" name="program-goal" checked>
+                <label for="slim">
+                  Похудение
                 </label>
-                <input class="program-request__cat-weight" id="cat-weight" type="number" name="cat-weight" placeholder="7" required>
+                <input class="program-request__type-gain" id="gain" type="radio" name="program-goal">
+                <label for="gain">
+                  Набор массы
+                </label>
+                <input class="program-request__type-dunno" id="advice-request" type="radio" name="program-goal">
+                <label for="advice-request">
+                  Не знаю (нужен ваш совет)
+                </label>
               </div>
-              <div class="program-request__cat-item-wrapper">
-              <label for="age">
-                Возраст (лет):
-              </label>
-              <input class="program-request__cat-age" id="cat-age" type="number" name="cat-age" placeholder="7">
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="program-request__type">
-            <legend class="visually-hidden">
-              Выберите тип программы
-            </legend>
-            <div class="container">
-              <input class="program-request__type-slim" id="slim" type="radio" name="program-goal" checked>
-              <label for="slim">
-                Похудение
-              </label>
-              <input class="program-request__type-gain" id="gain" type="radio" name="program-goal">
-              <label for="gain">
-                Набор массы
-              </label>
-              <input class="program-request__type-dunno" id="advice-request" type="radio" name="program-goal">
-              <label for="advice-request">
-                Не знаю (нужен ваш совет)
-              </label>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
           <fieldset class="program-request__contacts">
             <div class="container">
               <legend>
                 Контактные данные (владельца кота)
               </legend>
-              <div class="program-request__contacts-item-wrapper">
-                <label for="mail">
-                  E-mail:*
-                </label>
-                <input class="program-request__contacts-email" id="owner-mail" type="email" name="owner-mail" placeholder="kuklachev@gmail.com">
-              </div>
-              <div class="program-request__contacts-item-wrapper">
-                <label for="phone">
-                  Телефон:*
-                </label>
-                <input class="program-request__contacts-phone" id="owner-phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
+              <div class="program-request__contacts-wrapper">
+                <div class="program-request__contacts-item-wrapper">
+                  <label for="mail">
+                    E-mail:*
+                  </label>
+                  <input class="program-request__contacts-email" id="owner-mail" type="email" name="owner-mail" placeholder="kuklachev@gmail.com">
+                </div>
+                <div class="program-request__contacts-item-wrapper">
+                  <label for="phone">
+                    Телефон:*
+                  </label>
+                  <input class="program-request__contacts-phone" id="owner-phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
+                </div>
               </div>
             </div>
           </fieldset>

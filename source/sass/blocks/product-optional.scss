@@ -23,8 +23,31 @@
 
 @media (min-width: $width__tablet) {
   .product-optional {
-    margin-top: 24px;
+    margin: 0px;
+    margin-top: 3px;
+    width: 50%;
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+  }
+
+  .product-optional__data-price {
+    width: 21%;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .product-optional {
+    margin-top: 15px;
+    width: 325px;
+  }
+
+  .product-optional__data-ammount {
+    text-align: left;
+  }
+
+  .product-optional__data-price {
+    padding-left: 16px;
+    text-align: left;
   }
 }

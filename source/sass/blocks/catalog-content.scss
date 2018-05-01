@@ -17,3 +17,26 @@
   font-weight: 400;
   color: $font-color__heading;
 }
+
+@media (min-width: $width__tablet) {
+  .catalog-content__title {
+    margin-bottom: 165px;
+  }
+
+  .catalog-content__wrapper {
+    outline: none;
+  }
+
+  .catalog-content__title {
+    margin-top: 50px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .catalog-content__title {
+    margin-top: 64px;
+    margin-bottom: 164px;
+  }
+}
