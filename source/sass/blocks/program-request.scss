@@ -45,12 +45,12 @@
   vertical-align: middle;
 }
 
-.program-request__cat-name::placeholder,
-.program-request__cat-weight::placeholder,
-.program-request__cat-age::placeholder,
-.program-request__contacts-email::placeholder,
-.program-request__contacts-phone::placeholder,
-textarea {
+.pet-info__name::placeholder,
+.pet-info__weightweight::placeholder,
+.pet-info__age::placeholder,
+.owner-contacts__email::placeholder,
+.owner-contacts__phone::placeholder,
+textarea::placeholder {
   margin: 0;
   padding: 0;
   font-family: $font-family__headings;
@@ -61,9 +61,9 @@ textarea {
   text-transform: uppercase;
 }
 
-.program-request__contacts legend,
-.program-request__owner-comments legend,
-.program-request__options legend {
+.owner-contacts__legend,
+.owner-comments__legend,
+.program-options__legend {
   font-family: $font-family__headings;
   font-size: 24px;
   line-height: 24px;
@@ -71,7 +71,7 @@ textarea {
   color: $font-color__heading;
 }
 
-.program-request__cat-item-wrapper {
+.pet-info__item-wrapper {
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
@@ -79,11 +79,11 @@ textarea {
   width: 100%;
 }
 
-.program-request__cat-item-wrapper label {
+.pet-info__item-wrapper label {
   padding-right: 14px;
 }
 
-.program-request__cat-item-wrapper input {
+.pet-info__item-wrapper input {
   padding: 12px 0 12px 14px;
   flex-grow: 1;
   font-family: $font-family__headings;
@@ -95,21 +95,21 @@ textarea {
   border: 1px solid rgb(230, 230, 230);
 }
 
-.program-request__type .container {
+.purpose .container {
   padding: 26px 0 26px 65px;
   margin-top: 9px;
   border: 1px solid rgb(237, 237, 237);
 }
 
-.program-request__type label:not(:first-of-type) {
+.purpose label:not(:first-of-type) {
   margin-top: 25px;
 }
 
-.program-request__type input {
+.purpose input {
   display: none;
 }
 
-.program-request__type label {
+.purpose label {
   position: relative;
   display: block;
 
@@ -126,7 +126,7 @@ textarea {
   }
 }
 
-.program-request__type input:checked + label::after {
+.purpose input:checked + label::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -141,37 +141,37 @@ textarea {
   margin-top: 28px;
 }
 
-.program-request__contacts legend {
+.owner-contacts__legend {
   position: relative;
+  width: 201px;
 
   &::before {
     content: "";
     position: absolute;
     top: 14px;
     left: 100%;
-    margin-left: -28%;
     height: 3px;
     width: 100vw;
     background-color: $background__elements;
   }
 }
 
-.program-request__contacts-item-wrapper {
+.owner-contacts__wrapper-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-.program-request__contacts-item-wrapper:first-of-type {
+.owner-contacts__wrapper-item:first-of-type {
   margin-top: 35px;
 }
 
-.program-request__contacts-item-wrapper:not(:first-of-type) {
+.owner-contacts__wrapper-item:not(:first-of-type) {
   margin-top: 14px;
 }
 
-.program-request__contacts-item-wrapper input {
+.owner-contacts__wrapper-item input {
   padding: 12px 35px 12px 14px;
   flex-grow: 1;
   font-family: $font-family__headings;
@@ -183,37 +183,42 @@ textarea {
   border: 1px solid rgb(230, 230, 230);
 }
 
-.program-request__contacts-item-wrapper label {
+.owner-contacts__wrapper-item label {
   padding-right: 12px;
 }
 
-.program-request__owner-comments .container {
+.owner-comments .container {
   margin-top: 29px;
 }
 
-.program-request__owner-comments legend {
+.owner-comments__legend {
   position: relative;
-  width: 50%;
+  width: 142px;
 
   &::before {
     content: "";
     position: absolute;
     top: 14px;
     left: 100%;
-    margin-left: -2px;
     height: 3px;
     width: 100vw;
     background-color: $background__elements;
   }
 }
 
-.program-request__owner-comments textarea {
+.owner-comments textarea {
   margin-top: 35px;
   padding-top: 12px;
   width: 100%;
   box-sizing: border-box;
   height: 150px;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__text;
   text-align: center;
+  text-transform: uppercase;
   resize: none;
   border: 1px solid rgb(230, 230, 230);
 }
@@ -222,38 +227,37 @@ textarea {
   padding-top: 23px;
 }
 
-.program-request__options legend {
+.program-options__legend {
   position: relative;
-  width: 50%;
+  width: 164px;
 }
 
-.program-request__options legend::before {
+.program-options__legend::before {
   content: "";
   position: absolute;
   top: 15px;
   left: 100%;
-  margin-left: 20px;
   height: 3px;
   width: 100vw;
   background-color: $background__elements;
 }
 
-.program-request__options-wrapper {
+.program-options__wrapper {
   display: flex;
   margin-top: 21px;
   padding: 20px 0 39px 46px;
   flex-direction: column;
 }
 
-.program-request__options-wrapper input {
+.program-options__wrapper input {
   display: none;
 }
 
-.program-request__options-wrapper label:not(:last-of-type) {
+.program-options__wrapper label:not(:last-of-type) {
   margin-bottom: 25px;
 }
 
-.program-request__options-wrapper label {
+.program-options__wrapper label {
   position: relative;
 
   &::before {
@@ -268,7 +272,7 @@ textarea {
   }
 }
 
-.program-request__required-fields {
+.program-options__required-fields {
   margin: 0;
   margin-top: 21px;
   margin-bottom: 32px;
@@ -282,19 +286,19 @@ textarea {
 }
 
 @media (min-width: $width__tablet) {
-  .program-request__cat-name::placeholder,
-  .program-request__cat-weight::placeholder,
-  .program-request__cat-age::placeholder,
-  .program-request__contacts-email::placeholder,
-  .program-request__contacts-phone::placeholder,
-  textarea {
+  .pet-info__name::placeholder,
+  .pet-info__weight::placeholder,
+  .pet-info__age::placeholder,
+  .owner-contacts__email::placeholder,
+  .owner-contacts__phone::placeholder,
+  textarea::placeholder {
     font-size: 20px;
     line-height: 20px;
   }
 
-  .program-request__contacts legend,
-  .program-request__owner-comments legend,
-  .program-request__options legend {
+  .owner-contacts__legend,
+  .owner-comments__legend,
+  .program-options__legend {
     font-size: 36px;
     line-height: 36px;
   }
@@ -321,28 +325,30 @@ textarea {
     margin-top: 27px;
   }
 
-  .program-request__cat-item-wrapper {
+  .pet-info__item-wrapper {
     margin-left: 41px;
     margin-bottom: 20px;
     width: 630px;
   }
 
-  .program-request__cat-item-wrapper input {
-    padding: 16px 0 16px 20px;
+  .pet-info__item-wrapper input {
+    padding: 10px 0 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
-  .program-request__type .container {
+  .purpose .container {
     margin-top: 52px;
     padding: 33px 0 35px 89px;
     width: 631px;
     border: 1px solid rgba(205, 205, 205, 0.5);
   }
 
-  .program-request__type label:not(:first-of-type) {
+  .purpose label:not(:first-of-type) {
     margin-top: 33px;
   }
 
-  .program-request__type label {
+  .purpose label {
     &::before {
       top: -9px;
       left: -60px;
@@ -351,20 +357,22 @@ textarea {
     }
   }
 
-  .program-request__type input:checked + label::after {
+  .purpose input:checked + label::after {
     top: 2px;
     left: -49px;
     width: 18px;
     height: 18px;
   }
 
-  .program-request__contacts legend {
+  .owner-contacts__legend {
     margin-top: 75px;
     padding-left: 39px;
+    width: 593px;
+    box-sizing: border-box;
 
     &::before {
       top: 22px;
-      left: 111.8%;
+      left: 100%;
       height: 3px;
       width: 50vw;
     }
@@ -380,35 +388,38 @@ textarea {
     }
   }
 
-  .program-request__contacts-item-wrapper {
+  .owner-contacts__wrapper-item {
     width: 632px;
     padding-left: 41px;
   }
 
-  .program-request__contacts-item-wrapper:first-of-type {
+  .owner-contacts__wrapper-item:first-of-type {
     width: 632px;
     margin-top: 76px;
     padding-left: 41px;
   }
 
-  .program-request__contacts-item-wrapper:last-of-type {
+  .owner-contacts__wrapper-item:last-of-type {
     margin-top: 20px;
   }
 
-  .program-request__contacts-item-wrapper input {
-    padding: 16px 0 16px 20px;
+  .owner-contacts__wrapper-item input {
+    padding: 10px 0 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
-  .program-request__owner-comments legend {
+  .owner-comments__legend {
     margin-top: 65px;
     padding-left: 39px;
+    width: 259px;
+    box-sizing: border-box;
 
     &::before {
       content: "";
       position: absolute;
       top: 22px;
-      left: 66%;
-      margin-left: -2px;
+      left: 100%;
       height: 3px;
       width: 100vw;
       background-color: $background__elements;
@@ -426,32 +437,36 @@ textarea {
     }
   }
 
-  .program-request__owner-comments textarea {
+  .owner-comments textarea {
     margin-top: 76px;
     margin-left: 40px;
     padding-top: 14px;
     padding-left: 18px;
     width: 631px;
     height: 174px;
+    font-size: 20px;
+    line-height: 20px;
     text-align: left;
   }
 
-  .program-request__options legend {
+  .program-options__legend {
     margin-top: 38px;
     padding-left: 39px;
+    width: 292px;
+    box-sizing: border-box;
   }
 
-  .program-request__options legend::before {
+  .program-options legend::before {
     content: "";
     position: absolute;
     top: 22px;
-    left: 69%;
+    left: 100%;
     height: 3px;
     width: 100vw;
     background-color: $background__elements;
   }
 
-  .program-request__options legend::after {
+  .program-options legend::after {
     content: "";
     position: absolute;
     top: 22px;
@@ -461,7 +476,7 @@ textarea {
     background-color: $background__elements;
   }
 
-  .program-request__options-wrapper {
+  .program-options__wrapper {
     margin-top: 46px;
     padding-left: 99px;
     display: flex;
@@ -469,20 +484,20 @@ textarea {
     flex-wrap: wrap;
   }
 
-  .program-request__options label {
+  .program-options label {
     width: 200px;
   }
 
-  .program-request__options label:first-of-type,
-  .program-request__options label:nth-of-type(2) {
+  .program-options label:first-of-type,
+  .program-options label:nth-of-type(2) {
     margin-bottom: 52px;
   }
 
-  .program-request__options label:nth-of-type(2n) {
+  .program-options label:nth-of-type(2n) {
     margin-left: 143px;
   }
 
-  .program-request__options-wrapper label {
+  .program-options__wrapper label {
     &::before {
       content: "";
       position: absolute;
@@ -495,7 +510,7 @@ textarea {
     }
   }
 
-  .program-request__options-button-wrapper {
+  .program-options__wrapper-button {
     padding-bottom: 73px;
     display: flex;
     flex-wrap: nowrap;
@@ -503,7 +518,7 @@ textarea {
     height: 52px;
   }
 
-  .program-request__required-fields {
+  .program-options__required-fields {
     margin-top: 29px;
     margin-left: 44px;
     width: 30%;
@@ -527,25 +542,29 @@ textarea {
 
   .program-request__wrapper {
     display: flex;
+    margin: 0 auto;
+    padding: 0;
+    max-width: $width__desktop;
+    box-sizing: border-box;
   }
 
   .program-request__cat .container {
     padding-right: 0;
   }
 
-  .program-request__cat-item-wrapper {
-    margin-left: 60px;
+  .pet-info__item-wrapper {
+    margin-left: 1px;
     width: 568px;
   }
 
-  .program-request__type .container {
+  .purpose .container {
     margin-top: 0;
     margin-left: 81px;
     padding: 33px 0 35px 86px;
     width: 570px;
   }
 
-  .program-request__type label {
+  .purpose label {
     &::before {
       top: -9px;
       left: -59px;
@@ -554,67 +573,70 @@ textarea {
     }
   }
 
-  .program-request__type input:checked + label::after {
+  .purpose input:checked + label::after {
     top: 2px;
     left: -48px;
     width: 18px;
     height: 18px;
   }
 
-  .program-request__contacts legend {
+  .owner-contacts__legend {
     margin-top: 50px;
     padding-left: 0;
+    padding-right: 0;
+    width: 553px;
 
     &::before {
       top: 21px;
-      left: 73.4%;
+      left: 100%;
       height: 3px;
-      width: 50vw;
+      width: 150vw;
     }
 
     &::after {
       content: "";
       position: absolute;
       top: 21px;
-      right: 103.2%;
+      right: calc(100% + 40px);
       height: 3px;
       width: 50vw;
       background-color: $background__elements;
     }
   }
 
-  .program-request__contacts-wrapper {
+  .owner-contacts__wrapper {
     display: flex;
     padding-top: 75px;
     margin-left: 1px;
   }
 
-  .program-request__contacts-item-wrapper {
+  .owner-contacts__wrapper-item {
     width: 570px;
     padding-left: 0;
     box-sizing: border-box;
   }
 
-  .program-request__contacts-item-wrapper:first-of-type {
+  .owner-contacts__wrapper-item:first-of-type {
     width: 569px;
     margin-top: 0;
     padding-left: 0;
   }
 
-  .program-request__contacts-item-wrapper:last-of-type {
+  .owner-contacts__wrapper-item:last-of-type {
     margin-top: 0;
     margin-left: 78px;
   }
 
-  .program-request__owner-comments legend {
+  .owner-comments__legend {
     margin-top: 67px;
     padding-left: 0;
+    width: 219px;
 
     &::before {
       content: "";
       position: absolute;
       top: 22px;
-      left: 36.2%;
+      left: 100;
       height: 3px;
       width: 100vw;
       background-color: $background__elements;
@@ -624,14 +646,14 @@ textarea {
       content: "";
       position: absolute;
       top: 22px;
-      right: 106.5%;
+      right: calc(100% + 40px);
       height: 3px;
       width: 100vw;
       background-color: $background__elements;
     }
   }
 
-  .program-request__owner-comments textarea {
+  .owner-comments textarea {
     margin-top: 76px;
     margin-left: 0;
     padding-top: 14px;
@@ -641,50 +663,51 @@ textarea {
     text-align: left;
   }
 
-  .program-request__options legend {
+  .program-options__legend {
     margin-top: 40px;
     padding-left: 0;
+    width: 252px;
   }
 
-  .program-request__options legend::before {
+  .program-options__legend::before {
     top: 22px;
     left: 38%;
   }
 
-  .program-request__options legend::after {
+  .program-options__legend::after {
     top: 22px;
-    right: 106.5%;
+    margin-right: 40px;
   }
 
-  .program-request__options-wrapper {
+  .program-options__wrapper {
     margin-top: 46px;
     padding-left: 59px;
     padding-bottom: 47px;
     width: 100%;
   }
 
-  .program-request__options label {
+  .program-options label {
     width: 245px;
   }
 
-  .program-request__options label:first-of-type,
-  .program-request__options label:nth-of-type(2) {
+  .program-options label:first-of-type,
+  .program-options label:nth-of-type(2) {
     margin-bottom: 0;
   }
 
-  .program-request__options label:nth-of-type(2n) {
+  .program-options label:nth-of-type(2n) {
     margin-left: 0;
   }
 
-  .program-request__options label:not(:last-of-type) {
+  .program-options label:not(:last-of-type) {
     margin-right: 80px;
   }
 
-  .program-request__options-button-wrapper {
+  .program-options__wrapper-button {
     padding-bottom: 82px;
   }
 
-  .program-request__required-fields {
+  .program-options__required-fields {
     margin-top: 29px;
     margin-left: 19px;
     width: 25%;

@@ -10,12 +10,12 @@
   border-collapse: collapse;
 }
 
-.product-optional__data-ammount {
+.product-optional__ammount {
   padding: 0;
   width: 50%;
 }
 
-.product-optional__data-price {
+.product-optional__price {
   padding: 0;
   width: 50%;
   text-align: right;
@@ -31,7 +31,7 @@
     text-align: right;
   }
 
-  .product-optional__data-price {
+  .product-optional__price {
     width: 21%;
   }
 }
@@ -42,11 +42,11 @@
     width: 325px;
   }
 
-  .product-optional__data-ammount {
+  .product-optional__ammount {
     text-align: left;
   }
 
-  .product-optional__data-price {
+  .product-optional__price {
     padding-left: 16px;
     text-align: left;
   }
