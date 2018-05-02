@@ -95,6 +95,7 @@
 
   .main-nav__item--active {
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -160,15 +161,15 @@
   }
 
   .main-nav--dark .main-nav__item--active {
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 1px;
-    width: calc(100% - 3px);
-    height: 2px;
-    background-color: $background__main;
-  }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 1px;
+      width: calc(100% - 3px);
+      height: 2px;
+      background-color: $background__main;
+    }
   }
 
   .main-nav .main-nav__item--active::after {
