@@ -1,5 +1,10 @@
+.program-request {
+  padding-top: 16px;
+}
+
 .program-request__title {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
   font-family: $font-family__headings;
   font-size: 36px;
@@ -11,6 +16,7 @@
 .program-request__invitation {
   margin: 0;
   padding: 0;
+  padding-right: 30px;
   font-family: $font-family__headings;
   font-size: 14px;
   line-height: 18px;
@@ -19,7 +25,13 @@
   text-transform: uppercase;
 }
 
+.program-request__form {
+  padding-top: 39px;
+}
+
 .program-request__form fieldset {
+  padding: 0;
+  margin: 0;
   border: 0;
 }
 
@@ -30,21 +42,17 @@
   font-weight: 400;
   color: $font-color__heading;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
-.program-request__cat label,
-.program-request__type label,
-.program-request__contacts label,
-.program-request__options label {
-  display: block;
-}
-
-.program-request__cat-name::placeholder,
-.program-request__cat-weight::placeholder,
-.program-request__cat-age::placeholder,
-.program-request__contacts-email::placeholder,
-.program-request__contacts-phone::placeholder,
-textarea {
+.pet-info__name::placeholder,
+.pet-info__weightweight::placeholder,
+.pet-info__age::placeholder,
+.owner-contacts__email::placeholder,
+.owner-contacts__phone::placeholder,
+textarea::placeholder {
+  margin: 0;
+  padding: 0;
   font-family: $font-family__headings;
   font-size: 16px;
   line-height: 18px;
@@ -53,9 +61,9 @@ textarea {
   text-transform: uppercase;
 }
 
-.program-request__contacts legend,
-.program-request__owner-comments legend,
-.program-request__options legend {
+.owner-contacts__legend,
+.owner-comments__legend,
+.program-options__legend {
   font-family: $font-family__headings;
   font-size: 24px;
   line-height: 24px;
@@ -63,51 +71,645 @@ textarea {
   color: $font-color__heading;
 }
 
-.program-request__owner-comments textarea {
+.pet-info__item-wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
-.program-request__required-fields {
+.pet-info__item-wrapper label {
+  padding-right: 14px;
+}
+
+.pet-info__item-wrapper input {
+  padding: 12px 0 12px 14px;
+  flex-grow: 1;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__text;
+  text-transform: uppercase;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.purpose .container {
+  padding: 26px 0 26px 65px;
+  margin-top: 9px;
+  border: 1px solid rgb(237, 237, 237);
+}
+
+.purpose label:not(:first-of-type) {
+  margin-top: 25px;
+}
+
+.purpose input {
+  display: none;
+}
+
+.purpose label {
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -46px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid rgb(205, 205, 205);
+  }
+}
+
+.purpose input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -37px;
+  width: 12px;
+  height: 12px;
+  background: $background__elements;
+  border-radius: 50%;
+}
+
+.program-request__contacts .container {
+  margin-top: 28px;
+}
+
+.owner-contacts__legend {
+  position: relative;
+  width: 201px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 100%;
+    height: 3px;
+    width: 100vw;
+    background-color: $background__elements;
+  }
+}
+
+.owner-contacts__wrapper-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.owner-contacts__wrapper-item:first-of-type {
+  margin-top: 35px;
+}
+
+.owner-contacts__wrapper-item:not(:first-of-type) {
+  margin-top: 14px;
+}
+
+.owner-contacts__wrapper-item input {
+  padding: 12px 35px 12px 14px;
+  flex-grow: 1;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__text;
+  text-transform: uppercase;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.owner-contacts__wrapper-item label {
+  padding-right: 12px;
+}
+
+.owner-comments .container {
+  margin-top: 29px;
+}
+
+.owner-comments__legend {
+  position: relative;
+  width: 142px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 100%;
+    height: 3px;
+    width: 100vw;
+    background-color: $background__elements;
+  }
+}
+
+.owner-comments textarea {
+  margin-top: 35px;
+  padding-top: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 150px;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-color__text;
+  text-align: center;
+  text-transform: uppercase;
+  resize: none;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.program-request__options .container {
+  padding-top: 23px;
+}
+
+.program-options__legend {
+  position: relative;
+  width: 164px;
+}
+
+.program-options__legend::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 100%;
+  height: 3px;
+  width: 100vw;
+  background-color: $background__elements;
+}
+
+.program-options__wrapper {
+  display: flex;
+  margin-top: 21px;
+  padding: 20px 0 39px 46px;
+  flex-direction: column;
+}
+
+.program-options__wrapper input {
+  display: none;
+}
+
+.program-options__wrapper label:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.program-options__wrapper label {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -46px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(205, 205, 205);
+  }
+}
+
+.program-options__required-fields {
   margin: 0;
+  margin-top: 21px;
+  margin-bottom: 32px;
   padding: 0;
   font-family: $font-family__text;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  text-align: center;
   color: $font-color__text;
 }
 
 @media (min-width: $width__tablet) {
+  .pet-info__name::placeholder,
+  .pet-info__weight::placeholder,
+  .pet-info__age::placeholder,
+  .owner-contacts__email::placeholder,
+  .owner-contacts__phone::placeholder,
+  textarea::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .owner-contacts__legend,
+  .owner-comments__legend,
+  .program-options__legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program-request__form label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .program-request__title {
+    margin-top: 34px;
     font-size: 60px;
   }
 
   .program-request__invitation {
+    margin-top: 55px;
+    padding-left: 40px;
+    width: 50%;
     font-size: 20px;
     line-height: 30px;
   }
 
-  .program-request__options-wrapper {
+  .program-request__form {
+    margin-top: 27px;
+  }
+
+  .pet-info__item-wrapper {
+    margin-left: 41px;
+    margin-bottom: 20px;
+    width: 630px;
+  }
+
+  .pet-info__item-wrapper input {
+    padding: 10px 0 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .purpose .container {
+    margin-top: 52px;
+    padding: 33px 0 35px 89px;
+    width: 631px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+  }
+
+  .purpose label:not(:first-of-type) {
+    margin-top: 33px;
+  }
+
+  .purpose label {
+    &::before {
+      top: -9px;
+      left: -60px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .purpose input:checked + label::after {
+    top: 2px;
+    left: -49px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .owner-contacts__legend {
+    margin-top: 75px;
+    padding-left: 39px;
+    width: 593px;
+    box-sizing: border-box;
+
+    &::before {
+      top: 22px;
+      left: 100%;
+      height: 3px;
+      width: 50vw;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 100%;
+      height: 3px;
+      width: 50vw;
+      background-color: $background__elements;
+    }
+  }
+
+  .owner-contacts__wrapper-item {
+    width: 632px;
+    padding-left: 41px;
+  }
+
+  .owner-contacts__wrapper-item:first-of-type {
+    width: 632px;
+    margin-top: 76px;
+    padding-left: 41px;
+  }
+
+  .owner-contacts__wrapper-item:last-of-type {
+    margin-top: 20px;
+  }
+
+  .owner-contacts__wrapper-item input {
+    padding: 10px 0 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .owner-comments__legend {
+    margin-top: 65px;
+    padding-left: 39px;
+    width: 259px;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 100%;
+      height: 3px;
+      width: 100vw;
+      background-color: $background__elements;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 100%;
+      margin-left: -2px;
+      height: 3px;
+      width: 100vw;
+      background-color: $background__elements;
+    }
+  }
+
+  .owner-comments textarea {
+    margin-top: 76px;
+    margin-left: 40px;
+    padding-top: 14px;
+    padding-left: 18px;
+    width: 631px;
+    height: 174px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .program-options__legend {
+    margin-top: 38px;
+    padding-left: 39px;
+    width: 292px;
+    box-sizing: border-box;
+  }
+
+  .program-options legend::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 100%;
+    height: 3px;
+    width: 100vw;
+    background-color: $background__elements;
+  }
+
+  .program-options legend::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 100%;
+    height: 3px;
+    width: 100vw;
+    background-color: $background__elements;
+  }
+
+  .program-options__wrapper {
+    margin-top: 46px;
+    padding-left: 99px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .program-request__options label {
-    width: 50%;
+  .program-options label {
+    width: 200px;
   }
 
-  .program-request__options-button-wrapper {
+  .program-options label:first-of-type,
+  .program-options label:nth-of-type(2) {
+    margin-bottom: 52px;
+  }
+
+  .program-options label:nth-of-type(2n) {
+    margin-left: 143px;
+  }
+
+  .program-options__wrapper label {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: -59px;
+      width: 40px;
+      height: 40px;
+      box-sizing: border-box;
+      border: 1px solid rgb(205, 205, 205);
+    }
+  }
+
+  .program-options__wrapper-button {
+    padding-bottom: 73px;
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
+    height: 52px;
   }
 
-  .program-request__required-fields {
+  .program-options__required-fields {
+    margin-top: 29px;
+    margin-left: 44px;
     width: 30%;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
 @media (min-width: $width__desktop) {
-  .program-request__options label {
-    width: 245 / 1220 * 100%;
+  .program-request__title {
+    margin-top: 47px;
+  }
+
+  .program-request__invitation {
+    margin-top: 55px;
+    padding-left: 0;
+    width: 30%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .program-request__wrapper {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    max-width: $width__desktop;
+    box-sizing: border-box;
+  }
+
+  .program-request__cat .container {
+    padding-right: 0;
+  }
+
+  .pet-info__item-wrapper {
+    margin-left: 1px;
+    width: 568px;
+  }
+
+  .purpose .container {
+    margin-top: 0;
+    margin-left: 81px;
+    padding: 33px 0 35px 86px;
+    width: 570px;
+  }
+
+  .purpose label {
+    &::before {
+      top: -9px;
+      left: -59px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .purpose input:checked + label::after {
+    top: 2px;
+    left: -48px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .owner-contacts__legend {
+    margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 553px;
+
+    &::before {
+      top: 21px;
+      left: 100%;
+      height: 3px;
+      width: 150vw;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      right: calc(100% + 40px);
+      height: 3px;
+      width: 50vw;
+      background-color: $background__elements;
+    }
+  }
+
+  .owner-contacts__wrapper {
+    display: flex;
+    padding-top: 75px;
+    margin-left: 1px;
+  }
+
+  .owner-contacts__wrapper-item {
+    width: 570px;
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+
+  .owner-contacts__wrapper-item:first-of-type {
+    width: 569px;
+    margin-top: 0;
+    padding-left: 0;
+  }
+
+  .owner-contacts__wrapper-item:last-of-type {
+    margin-top: 0;
+    margin-left: 78px;
+  }
+
+  .owner-comments__legend {
+    margin-top: 67px;
+    padding-left: 0;
+    width: 219px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 100;
+      height: 3px;
+      width: 100vw;
+      background-color: $background__elements;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: calc(100% + 40px);
+      height: 3px;
+      width: 100vw;
+      background-color: $background__elements;
+    }
+  }
+
+  .owner-comments textarea {
+    margin-top: 76px;
+    margin-left: 0;
+    padding-top: 14px;
+    padding-left: 18px;
+    width: 100%;
+    height: 174px;
+    text-align: left;
+  }
+
+  .program-options__legend {
+    margin-top: 40px;
+    padding-left: 0;
+    width: 252px;
+  }
+
+  .program-options__legend::before {
+    top: 22px;
+    left: 38%;
+  }
+
+  .program-options__legend::after {
+    top: 22px;
+    margin-right: 40px;
+  }
+
+  .program-options__wrapper {
+    margin-top: 46px;
+    padding-left: 59px;
+    padding-bottom: 47px;
+    width: 100%;
+  }
+
+  .program-options label {
+    width: 245px;
+  }
+
+  .program-options label:first-of-type,
+  .program-options label:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+
+  .program-options label:nth-of-type(2n) {
+    margin-left: 0;
+  }
+
+  .program-options label:not(:last-of-type) {
+    margin-right: 80px;
+  }
+
+  .program-options__wrapper-button {
+    padding-bottom: 82px;
+  }
+
+  .program-options__required-fields {
+    margin-top: 29px;
+    margin-left: 19px;
+    width: 25%;
   }
 }

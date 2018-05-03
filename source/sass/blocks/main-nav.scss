@@ -1,5 +1,6 @@
 .main-nav {
   margin: 0;
+  margin-top: 16px;
   padding: 0;
   width: 100%;
   font-family: $font-family__headings;
@@ -16,19 +17,10 @@
   list-style: none;
 }
 
-.main-nav__item {
-  text-align: center;
-  border-top: 1px solid rgb(230, 230, 230);
-
-  &:last-of-type {
-    border-bottom: 1px solid rgb(230, 230, 230);
-  }
-}
-
 .main-nav__link {
   display: block;
   margin: 0;
-  padding: 22.5px 0;
+  padding: 8.24% 0;
   color: $font-color__heading;
   text-decoration: none;
 
@@ -41,6 +33,33 @@
   }
 }
 
+@media (max-width: $width__tablet) {
+  .main-nav__item {
+    position: relative;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -50vw;
+      width: 150vw;
+      height: 1px;
+      background-color: rgb(230, 230, 230);
+    }
+
+    &:last-of-type::after {
+      content: "";
+      position: absolute;
+      top: 66px;
+      left: -50vw;
+      width: 150vw;
+      height: 1px;
+      background-color: rgb(230, 230, 230);
+    }
+  }
+}
+
 @media (min-width: $width__tablet) {
   .main-nav {
     font-size: 18px;
@@ -50,7 +69,7 @@
 
   .main-nav__list {
     margin: 0;
-    margin-top: 30px;
+    margin-top: 26px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -59,21 +78,33 @@
   .main-nav__item {
     border: 0;
 
-    &:last-of-type {
-      border: 0;
+    &::before {
+      display: none;
+    }
+
+    &:first-of-type {
+      margin-right: -1px;
+      box-sizing: border-box;
     }
   }
 
   .main-nav__item:not(:first-of-type) {
     padding-top: 0;
-    padding-bottom: 10px;
     margin-left: 36px;
   }
 
   .main-nav__item--active {
-    margin-right: -1px;
-    padding-bottom: 7px;
-    border-bottom: 2px solid rgb(104, 183, 56);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      width: calc(100% - 1px);
+      height: 2px;
+      background-color: $background__elements;
+    }
   }
 
   .main-nav__link {
@@ -88,6 +119,7 @@
 
 @media (min-width: $width__desktop) {
   .main-nav {
+    margin: 0;
     width: 50%;
     font-size: 20px;
     line-height: 25px;
@@ -101,7 +133,6 @@
     box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
-    background: rgb(100, 168, 59);
   }
 
   .main-nav__item {
@@ -121,7 +152,7 @@
     margin-left: -3px;
   }
 
-  .main-nav__link {
+  .main-nav--dark .main-nav__link {
     color: rgb(255, 255, 255);
   }
 
@@ -129,8 +160,20 @@
     margin: 0;
   }
 
-  .main-nav__list .main-nav__item--active {
-    padding-bottom: 8px;
-    border-bottom: 2px solid rgb(255, 255, 255);
+  .main-nav--dark .main-nav__item--active {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 1px;
+      width: calc(100% - 3px);
+      height: 2px;
+      background-color: $background__main;
+    }
+  }
+
+  .main-nav .main-nav__item--active::after {
+    bottom: -10px;
+    width: calc(100% - 2px);
   }
 }

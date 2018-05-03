@@ -38,6 +38,7 @@
 
 @media (min-width: $width__tablet) {
   .contacts > .container {
+    padding-top: 62px;
     padding-left: 71px;
     padding-bottom: 58px;
   }
@@ -76,10 +77,10 @@
   .contacts > .container {
     position: absolute;
     top: 96px;
-    left: 110px;
+    left: 169px;
     padding: 0;
-    padding-top: 61px;
-    padding-left: 76px;
+    padding-top: 62px;
+    padding-left: 78px;
     padding-bottom: 56px;
     width: 570px;
     box-sizing: border-box;
@@ -99,6 +100,7 @@
     padding-left: 2px;
     margin: 0;
     margin-top: 0;
+    margin-left: 2px;
     text-align: left;
   }
 }
