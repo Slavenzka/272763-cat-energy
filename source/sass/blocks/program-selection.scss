@@ -94,7 +94,7 @@
 
   .program-selection__img {
     top: 20px;
-    left: calc(22% + 0px);
+    left: 22%;
     width: 709px;
     height: 609px;
     z-index: -1;
@@ -109,7 +109,7 @@
     background-size: 50% 100%;
     background-position: 100% 0;
 
-    @media (min-resolution: $retina__dpi),(min-resolution: $retina__dppx) {
+    @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
       background-image: url("/272763-cat-energy/source/img/index-background-desktop@2x.jpg");
     }
   }

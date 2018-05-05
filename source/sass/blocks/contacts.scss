@@ -64,6 +64,9 @@
 
 @media (min-width: $width__tablet) {
   .contacts .container {
+    padding-top: 62px;
+    padding-left: 71px;
+    padding-bottom: 58px;
 
     &::before {
       top: 347px;
@@ -83,12 +86,6 @@
     @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
       background-image: url("/272763-cat-energy/source/img/bg-map-tablet@2x.png");
     }
-  }
-
-  .contacts .container {
-    padding-top: 62px;
-    padding-left: 71px;
-    padding-bottom: 58px;
   }
 
   .contacts__invitation {
@@ -118,7 +115,6 @@
 }
 
 @media (min-width: $width__desktop) {
-
   .contacts__wrapper {
     position: relative;
     min-height: 400px;
