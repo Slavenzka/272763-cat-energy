@@ -286,6 +286,10 @@ textarea::placeholder {
 }
 
 @media (min-width: $width__tablet) {
+  .program-request {
+    padding-top: 3px;
+  }
+
   .pet-info__name::placeholder,
   .pet-info__weight::placeholder,
   .pet-info__age::placeholder,
@@ -528,8 +532,12 @@ textarea::placeholder {
 }
 
 @media (min-width: $width__desktop) {
+  .program-request {
+    padding-top: 0px;
+  }
+
   .program-request__title {
-    margin-top: 47px;
+    margin-top: 54px;
   }
 
   .program-request__invitation {
@@ -548,8 +556,9 @@ textarea::placeholder {
     box-sizing: border-box;
   }
 
-  .program-request__cat .container {
+  .program-request__wrapper .container--short {
     padding-right: 0;
+    min-width: 568px;
   }
 
   .pet-info__item-wrapper {

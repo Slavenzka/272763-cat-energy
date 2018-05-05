@@ -1,6 +1,5 @@
 .main-nav {
   margin: 0;
-  margin-top: 16px;
   padding: 0;
   width: 100%;
   font-family: $font-family__headings;
@@ -20,9 +19,10 @@
 .main-nav__link {
   display: block;
   margin: 0;
-  padding: 8.24% 0;
+  padding: 23px 0;
   color: $font-color__heading;
   text-decoration: none;
+  text-align: center;
 
   &:hover {
     opacity: 0.6;
@@ -33,7 +33,15 @@
   }
 }
 
+.main-nav__item:last-of-type .main-nav__link {
+  padding-bottom: 24px;
+}
+
 @media (max-width: $width__tablet) {
+  .main-nav {
+    margin-top: 12px;
+  }
+
   .main-nav__item {
     position: relative;
     text-align: center;
@@ -62,6 +70,7 @@
 
 @media (min-width: $width__tablet) {
   .main-nav {
+    margin-top: 16px;
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
@@ -101,7 +110,7 @@
       position: absolute;
       bottom: -9px;
       left: 0;
-      width: calc(100% - 1px);
+      width: calc(100% - 2px);
       height: 2px;
       background-color: $background__elements;
     }
@@ -109,6 +118,10 @@
 
   .main-nav__link {
     padding: 0;
+  }
+
+  .main-nav__item:last-of-type .main-nav__link {
+    padding-bottom: 0;
   }
 
   .main-nav__link > .container {
@@ -173,7 +186,7 @@
   }
 
   .main-nav .main-nav__item--active::after {
-    bottom: -10px;
+    top: 33px;
     width: calc(100% - 2px);
   }
 }
