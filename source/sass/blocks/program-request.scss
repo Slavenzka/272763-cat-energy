@@ -61,6 +61,32 @@ textarea::placeholder {
   text-transform: uppercase;
 }
 
+.pet-info__name:hover,
+.pet-info__weight:hover,
+.pet-info__age:hover,
+.owner-contacts__email:hover,
+.owner-contacts__phone:hover,
+.owner-comments textarea:hover {
+  border: 1px solid rgb(205, 205, 205);
+}
+
+.pet-info__name:focus,
+.pet-info__weight:focus,
+.pet-info__age:focus,
+.owner-contacts__email:focus,
+.owner-contacts__phone:focus,
+.owner-comments textarea:focus {
+  outline: 2px solid rgb(68, 68, 68);
+}
+
+.pet-info__name:invalid,
+.pet-info__weight:invalid,
+.pet-info__age:invalid,
+.owner-contacts__email:invalid,
+.owner-contacts__phone:invalid {
+  outline: 2px solid rgb(255, 130, 130);
+}
+
 .owner-contacts__legend,
 .owner-comments__legend,
 .program-options__legend {
@@ -124,6 +150,14 @@ textarea::placeholder {
     border-radius: 50%;
     border: 1px solid rgb(205, 205, 205);
   }
+
+  &:hover::before {
+    border: 1px solid rgb(186, 186, 186);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .purpose input:checked + label::after {
@@ -133,7 +167,7 @@ textarea::placeholder {
   left: -37px;
   width: 12px;
   height: 12px;
-  background: $background__elements;
+  background-color: $background__elements;
   border-radius: 50%;
 }
 
@@ -230,16 +264,16 @@ textarea::placeholder {
 .program-options__legend {
   position: relative;
   width: 164px;
-}
 
-.program-options__legend::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 100%;
-  height: 3px;
-  width: 100vw;
-  background-color: $background__elements;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 100%;
+    height: 3px;
+    width: 100vw;
+    background-color: $background__elements;
+  }
 }
 
 .program-options__wrapper {
@@ -257,7 +291,7 @@ textarea::placeholder {
   margin-bottom: 25px;
 }
 
-.program-options__wrapper label {
+.program-options input + label {
   position: relative;
 
   &::before {
@@ -270,6 +304,25 @@ textarea::placeholder {
     box-sizing: border-box;
     border: 1px solid rgb(205, 205, 205);
   }
+
+  &:hover::before {
+    border: 1px solid rgb(186, 186, 186);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.program-options input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -41px;
+  width: 22px;
+  height: 20px;
+  background-image: url("/272763-cat-energy/source/img/icon-tick.svg");
+  background-repeat: no-repeat;
 }
 
 .program-options__required-fields {
@@ -501,7 +554,7 @@ textarea::placeholder {
     margin-left: 143px;
   }
 
-  .program-options__wrapper label {
+  .program-options input + label {
     &::before {
       content: "";
       position: absolute;
@@ -512,6 +565,11 @@ textarea::placeholder {
       box-sizing: border-box;
       border: 1px solid rgb(205, 205, 205);
     }
+  }
+
+  .program-options input:checked + label::after {
+    top: 3px;
+    left: -50px;
   }
 
   .program-options__wrapper-button {

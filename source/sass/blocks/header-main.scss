@@ -17,6 +17,14 @@
   display: flex;
   justify-content: flex-start;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .header-main__logo-image {

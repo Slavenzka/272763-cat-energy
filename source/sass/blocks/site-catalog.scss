@@ -77,7 +77,7 @@
   margin: 0;
   margin-top: 19px;
   padding: 0;
-  width: 51%;
+  width: 50%;
   font-family: $font-family__headings;
   font-size: 16px;
   line-height: 16px;
@@ -92,8 +92,19 @@
     width: 24px;
     height: 11px;
     top: 3px;
-    right: 1px;
+    left: calc(100% - 25px);
     background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before {
+    width: 33px;
+    background-image: url("/272763-cat-energy/source/img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active,
+  &:active::before {
+    opacity: 0.3;
   }
 }
 

@@ -13,6 +13,14 @@
   color: rgb(255, 255, 255);
   background-color: $background__elements;
   border: 0;
+
+  &:hover {
+    background-color: rgb(94, 170, 47);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--order {
@@ -36,6 +44,14 @@
   font-weight: 400;
   color: $font-color__heading;
   background-color: rgb(242, 242, 242);
+
+  &:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3)
+  }
 }
 
 .button--submit {

@@ -37,6 +37,50 @@
     height: 60px;
     background-color: $background__elements;
   }
+
+  &--ingredients::before {
+    background-image: url("/272763-cat-energy/source/img/advantage-leaf@1x.png");
+    background-position: 50% 50%;
+    background-size: 50px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+      background-image: url("/272763-cat-energy/source/img/advantage-leaf@2x.png");
+    }
+  }
+
+  &--form::before {
+    background-image: url("/272763-cat-energy/source/img/advantage-powder@1x.png");
+    background-position: 50% 40%;
+    background-size: 50px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+      background-image: url("/272763-cat-energy/source/img/advantage-powder@2x.png");
+    }
+  }
+
+  &--replacement::before {
+    background-image: url("/272763-cat-energy/source/img/advantage-dining@1x.png");
+    background-position: 40% 50%;
+    background-size: 50px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+      background-image: url("/272763-cat-energy/source/img/advantage-dining@2x.png");
+    }
+  }
+
+  &--results::before {
+    background-image: url("/272763-cat-energy/source/img/advantage-clock@1x.png");
+    background-position: 50% 50%;
+    background-size: 50px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+      background-image: url("/272763-cat-energy/source/img/advantage-clock@2x.png");
+    }
+  }
 }
 
 .product-info__item:not(:last-of-type) {
@@ -86,6 +130,14 @@
       padding-top: 115px;
       padding-bottom: 103px;
     }
+
+    &--form::before {
+      background-position: 50% 50%;
+    }
+
+    &--replacement::before {
+      background-position: 50% 50%;
+    }
   }
 
   .product-info__item:not(:last-of-type) {
@@ -118,6 +170,14 @@
     &--results {
       padding-top: 115px;
       padding-bottom: 60px;
+    }
+
+    &--form::before {
+      background-position: 50% 50%;
+    }
+
+    &--replacement::before {
+      background-position: 50% 50%;
     }
   }
 
