@@ -49,7 +49,7 @@
     background-color: rgb(235, 235, 235);
   }
 
-  &:active {
+  &::active {
     color: rgba(68, 68, 68, 0.3)
   }
 }
