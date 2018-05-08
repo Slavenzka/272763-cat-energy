@@ -24,6 +24,10 @@ body {
   box-sizing: border-box;
 }
 
+.index-content {
+  overflow: hidden;
+}
+
 @media (min-width: $width__tablet) {
   .container {
     padding: 0 $padding__tablet;

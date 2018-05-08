@@ -13,7 +13,7 @@
     left: 129px;
     width: 62px;
     height: 53px;
-    background-image: url("/272763-cat-energy/source/img/map-pin.png");
+    background-image: url("../img/map-pin.png");
     background-size: cover;
   }
 }
@@ -25,12 +25,12 @@
 
 .contacts__wrapper {
   min-height: 476px;
-  background-image: url("/272763-cat-energy/source/img/bg-map-mobile@1x.png");
+  background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% 100%;
 
   @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
-    background-image: url("/272763-cat-energy/source/img/bg-map-mobile@2x.png");
+    background-image: url("../img/bg-map-mobile@2x.png");
   }
 }
 
@@ -73,18 +73,18 @@
       left: 322px;
       width: 124px;
       height: 106px;
-      background-image: url("/272763-cat-energy/source/img/map-pin.png");
+      background-image: url("../img/map-pin.png");
       background-size: cover;
     }
   }
 
   .contacts__wrapper {
     min-height: 597px;
-    background-image: url("/272763-cat-energy/source/img/bg-map-tablet@1x.png");
+    background-image: url("../img/bg-map-tablet@1x.png");
     background-position: 49.9% 100%;
 
     @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
-      background-image: url("/272763-cat-energy/source/img/bg-map-tablet@2x.png");
+      background-image: url("../img/bg-map-tablet@2x.png");
     }
   }
 
@@ -118,11 +118,11 @@
   .contacts__wrapper {
     position: relative;
     min-height: 400px;
-    background-image: url("/272763-cat-energy/source/img/bg-map-desktop@1x.png");
+    background-image: url("../img/bg-map-desktop@1x.png");
     background-position: 50% 100%;
 
     @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
-      background-image: url("/272763-cat-energy/source/img/bg-map-desktop@2x.png");
+      background-image: url("../img/bg-map-desktop@2x.png");
     }
   }
 
@@ -144,7 +144,7 @@
       left: 888px;
       width: 124px;
       height: 106px;
-      background-image: url("/272763-cat-energy/source/img/map-pin.png");
+      background-image: url("../img/map-pin.png");
     }
   }
 

@@ -1,5 +1,6 @@
 .program-request {
   padding-top: 16px;
+  overflow: hidden;
 }
 
 .program-request__title {
@@ -191,6 +192,7 @@ textarea::placeholder {
 }
 
 .owner-contacts__wrapper-item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -206,7 +208,7 @@ textarea::placeholder {
 }
 
 .owner-contacts__wrapper-item input {
-  padding: 12px 35px 12px 14px;
+  padding: 12px 34px 12px 14px;
   flex-grow: 1;
   font-family: $font-family__headings;
   font-size: 16px;
@@ -219,6 +221,30 @@ textarea::placeholder {
 
 .owner-contacts__wrapper-item label {
   padding-right: 12px;
+}
+
+.owner-contacts__icon-mail {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  fill: rgb(34, 34, 34);
+}
+
+.owner-contacts__icon-phone {
+  position: absolute;
+  top: 12px;
+  right: 13px;
+  fill: rgb(34, 34, 34);
+}
+
+.owner-contacts__email:focus + .owner-contacts__icon-mail,
+.owner-contacts__phone:focus + .owner-contacts__icon-phone {
+  fill: $background__elements;
+}
+
+.owner-contacts__email:invalid + .owner-contacts__icon-mail,
+.owner-contacts__phone:invalid + .owner-contacts__icon-phone {
+  fill: rgb(255, 130, 130);
 }
 
 .owner-comments .container {
@@ -321,7 +347,7 @@ textarea::placeholder {
   left: -41px;
   width: 22px;
   height: 20px;
-  background-image: url("/272763-cat-energy/source/img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
 
@@ -464,6 +490,16 @@ textarea::placeholder {
     padding: 10px 0 10px 20px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .owner-contacts__icon-mail {
+    top: 20px;
+    right: 21px;
+  }
+
+  .owner-contacts__icon-phone {
+    top: 17px;
+    right: 18px;
   }
 
   .owner-comments__legend {
@@ -692,6 +728,15 @@ textarea::placeholder {
   .owner-contacts__wrapper-item:last-of-type {
     margin-top: 0;
     margin-left: 78px;
+  }
+
+  .owner-contacts__icon-mail {
+    right: 20px;
+  }
+
+  .owner-contacts__icon-phone {
+    top: 17px;
+    right: 17px;
   }
 
   .owner-comments__legend {

@@ -44,3 +44,10 @@
     margin-top: 9px;
   }
 }
+
+@media (min-width: $width__desktop) {
+  .footer-main__logo {
+    margin-top: 3px;
+
+  }
+}

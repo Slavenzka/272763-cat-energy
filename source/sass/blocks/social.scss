@@ -3,20 +3,45 @@
   padding: 0;
   min-height: 62px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
   list-style: none;
   border-top: 1px solid rgb(217, 217, 217);
   border-bottom: 1px solid rgb(217, 217, 217);
 }
 
+.icon-vk__mobile,
+.icon-instagram__mobile,
+.icon-facebook__mobile {
+  fill: rgb(102, 102, 102);
+}
+
 .social__item {
   margin: 0;
   padding: 0;
-}
 
-.social__item:nth-of-type(2n) {
-  margin: 0 65px;
+  &--vk {
+    margin-top: 3px;
+    margin-left: 73px;
+  }
+
+  &--instagram {
+    margin-top: 5px;
+    margin-left: 37px;
+  }
+
+  &--fb {
+    margin-top: 4px;
+    margin-left: 40px;
+  }
+
+  &:hover svg {
+    fill: $background__elements;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .social__link {
@@ -28,34 +53,58 @@
     top: 0;
     background-repeat: no-repeat;
   }
-
-  &--vk::before {
-    left: -2px;
-    top: -5px;
-    width: 22px;
-    height: 12px;
-    background-image: url("../img/icon-vk-mobile.svg");
-  }
-
-  &--instagram::before {
-    left: -8px;
-    top: -7px;
-    width: 16px;
-    height: 16px;
-    background-image: url("../img/icon-insta-mobile.svg");
-  }
-
-  &--fb::before {
-    top: -9px;
-    right: 7px;
-    width: 10px;
-    height: 19px;
-    background-image: url("../img/icon-fb-mobile.svg");
-  }
 }
 
 @media (min-width: $width__tablet) {
   .social {
+    margin-left: 17px;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 124px;
     border: 0;
+  }
+
+  .social__item {
+    &--vk {
+      margin-top: 8px;
+      margin-left: 0px;
+    }
+
+    &--instagram {
+      margin-left: -1px;
+    }
+
+    &--fb {
+      margin-top: 1px;
+      margin-left: 0px;
+    }
+  }
+
+  .icon-vk__mobile {
+    width: 30px;
+    height: 16px;
+  }
+
+  .icon-instagram__mobile {
+    width: 23px;
+    height: 23px;
+  }
+
+  .icon-facebook__mobile {
+    width: 14.5px;
+    height: 28.5px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .social__item {
+    &--vk {
+      margin-top: 7px;
+      margin-left: 0px;
+    }
+
+    &--instagram {
+      margin-top: 4px;
+    }
   }
 }
