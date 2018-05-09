@@ -1,5 +1,6 @@
 .catalog-content {
   margin-bottom: 35px;
+  overflow: hidden;
 }
 
 .catalog-content__wrapper {
@@ -9,7 +10,7 @@
 
 .catalog-content__title {
   margin: 0;
-  margin-top: 16px;
+  margin-top: 15px;
   padding: 0;
   font-family: $font-family__headings;
   font-size: 36px;
@@ -25,7 +26,7 @@
 
   .catalog-content__title {
     margin-bottom: 165px;
-    margin-top: 50px;
+    margin-top: 37px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -33,7 +34,7 @@
 
 @media (min-width: $width__desktop) {
   .catalog-content__title {
-    margin-top: 64px;
+    margin-top: 55px;
     margin-bottom: 164px;
   }
 }
