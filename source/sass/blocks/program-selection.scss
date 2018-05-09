@@ -9,7 +9,7 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size: content;
+  background-size: contain;
 
   @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -84,7 +84,7 @@
     color: $font-color__heading;
   }
 
-  .pic__wrapper {
+  .program-selection__pic-wrapper {
     position: relative;
     margin: 0 auto;
     padding: 0;
@@ -133,7 +133,7 @@
 
   .program-selection__img {
     top: -261px;
-    left: calc(47% + 3px);
+    left: calc(47% + 4px);
     width: 552px;
     height: 499px;
     z-index: 0;

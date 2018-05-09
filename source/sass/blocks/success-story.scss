@@ -5,6 +5,7 @@
   padding-top: 16px;
   padding-bottom: 35px;
   background-color: $background__aux;
+  overflow: hidden;
 }
 
 .success-story__title {
@@ -181,6 +182,7 @@
       height: 6px;
       background-color: $background__elements;
       border-radius: 3px;
+      display: none;
     }
   }
 }
@@ -360,7 +362,7 @@
 
 @media (min-width: $width__desktop) {
   .success-story {
-    margin-top: 48px;
+    padding-top: 37px;
     padding-bottom: 0;
   }
 

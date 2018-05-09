@@ -46,6 +46,10 @@
 }
 
 @media (min-width: $width__desktop) {
+  .footer-main__content {
+    padding-bottom: 29px;
+  }
+
   .footer-main__logo {
     margin-top: 3px;
   }
