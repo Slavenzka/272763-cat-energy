@@ -85,9 +85,9 @@ gulp.task("serve", function() {
 gulp.task("build", function (done) {
   run(
     "clean",
-     "copy",
-     "style",
-     "sprite",
-     done
+    "copy",
+    "style",
+    "sprite",
+    done
   );
 });
