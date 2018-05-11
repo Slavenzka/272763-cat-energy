@@ -6,6 +6,10 @@
   background-color: $background__aux;
 }
 
+.footer-main__content .container {
+  padding-top: 0;
+}
+
 .footer-main__logo {
   margin: 0;
   padding: 0;
@@ -14,11 +18,39 @@
   font-size: 28px;
   text-align: center;
   background-color: $background__aux;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $width__tablet) {
+  .footer-main__content {
+    padding-top: 58px;
+    padding-bottom: 23px;
+  }
+
   .footer-main__content .container {
     display: flex;
     justify-content: space-between;
+  }
+
+  .footer-main__logo {
+    padding-top: 0;
+    margin-top: 9px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .footer-main__content {
+    padding-bottom: 29px;
+  }
+
+  .footer-main__logo {
+    margin-top: 3px;
   }
 }

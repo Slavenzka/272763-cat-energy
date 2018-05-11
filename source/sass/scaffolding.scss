@@ -34,6 +34,6 @@ body {
 @media (min-width: $width__desktop) {
   .container {
     padding: 0 $padding__desktop;
-    max-width: $width__desktop;
+    min-width: $width__desktop;
   }
 }
