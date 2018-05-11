@@ -10,9 +10,13 @@ var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+<<<<<<< HEAD
 var svgstore = require("gulp-svgstore");
 var del = require("del");
 var run =require("run-sequence");
+=======
+var svgstore = require ("gulp-svgstore");
+>>>>>>> master
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -21,10 +25,17 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
+<<<<<<< HEAD
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
+=======
+    .pipe(gulp.dest("source/css"))
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("source/css"))
+>>>>>>> master
     .pipe(server.stream());
 });
 
@@ -39,7 +50,11 @@ gulp.task("images", function() {
 });
 
 gulp.task("webp", function() {
+<<<<<<< HEAD
   return gulp.src("source/img/**/*.{png,jpg}")
+=======
+  return gulp.scr("source/img/**/*.{png,jpg}")
+>>>>>>> master
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"));
 });
@@ -50,6 +65,7 @@ gulp.task("sprite", function() {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
+<<<<<<< HEAD
     .pipe(gulp.dest("build/img"));
 });
 
@@ -70,6 +86,12 @@ gulp.task("clean", function() {
 });
 
 gulp.task("serve", function() {
+=======
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("serve", ["style"], function() {
+>>>>>>> master
   server.init({
     server: "build/",
     notify: false,
