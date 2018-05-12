@@ -60,6 +60,7 @@ textarea::placeholder {
   font-weight: 400;
   color: $font-color__heading;
   text-transform: uppercase;
+  opacity: 1;
 }
 
 .pet-info__name:hover,
@@ -111,7 +112,7 @@ textarea::placeholder {
 }
 
 .pet-info__item-wrapper input {
-  padding: 12px 0 12px 14px;
+  padding: 12px 12px 12px 14px;
   flex-grow: 1;
   font-family: $font-family__headings;
   font-size: 16px;
@@ -139,6 +140,7 @@ textarea::placeholder {
 .purpose label {
   position: relative;
   display: block;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -277,6 +279,8 @@ textarea::placeholder {
 .owner-comments textarea {
   margin-top: 35px;
   padding-top: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
   width: 100%;
   box-sizing: border-box;
   height: 150px;
@@ -285,7 +289,7 @@ textarea::placeholder {
   line-height: 18px;
   font-weight: 400;
   color: $font-color__text;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   resize: none;
   border: 1px solid rgb(230, 230, 230);
@@ -423,7 +427,7 @@ textarea::placeholder {
   }
 
   .pet-info__item-wrapper input {
-    padding: 10px 0 10px 20px;
+    padding: 10px 20px 10px 20px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -495,7 +499,7 @@ textarea::placeholder {
   }
 
   .owner-contacts__wrapper-item input {
-    padding: 10px 0 10px 20px;
+    padding: 10px 45px 10px 20px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -542,6 +546,7 @@ textarea::placeholder {
     margin-top: 76px;
     margin-left: 40px;
     padding-top: 14px;
+    padding-right: 15px;
     padding-left: 18px;
     width: 631px;
     height: 174px;
@@ -596,6 +601,7 @@ textarea::placeholder {
 
   .program-options label:nth-of-type(2n) {
     margin-left: 143px;
+    cursor: pointer;
   }
 
   .program-options input + label {
