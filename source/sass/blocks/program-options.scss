@@ -1,14 +1,11 @@
 .program-options__legend {
+  position: relative;
+  width: 164px;
   font-family: $font-family__headings;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: $font-color__heading;
-}
-
-.program-options__legend {
-  position: relative;
-  width: 164px;
 
   &::before {
     content: "";
@@ -86,15 +83,12 @@
 
 @media (min-width: $width__tablet) {
   .program-options__legend {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .program-options__legend {
     margin-top: 38px;
     padding-left: 39px;
     width: 292px;
     box-sizing: border-box;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .program-options legend::before {

@@ -18,14 +18,6 @@
   outline: 2px solid rgb(68, 68, 68);
 }
 
-.owner-comments__legend {
-  font-family: $font-family__headings;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $font-color__heading;
-}
-
 .owner-comments .container {
   margin-top: 29px;
 }
@@ -33,6 +25,11 @@
 .owner-comments__legend {
   position: relative;
   width: 142px;
+  font-family: $font-family__headings;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $font-color__heading;
 
   &::before {
     content: "";
@@ -71,15 +68,12 @@
   }
 
   .owner-comments__legend {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .owner-comments__legend {
     margin-top: 65px;
     padding-left: 39px;
     width: 259px;
     box-sizing: border-box;
+    font-size: 36px;
+    line-height: 36px;
 
     &::before {
       content: "";

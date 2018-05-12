@@ -110,15 +110,12 @@
   }
 
   .owner-contacts__legend {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .owner-contacts__legend {
     margin-top: 75px;
     padding-left: 39px;
     width: 593px;
     box-sizing: border-box;
+    font-size: 36px;
+    line-height: 36px;
 
     &::before {
       top: 22px;
