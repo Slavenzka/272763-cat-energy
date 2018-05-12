@@ -47,7 +47,7 @@
 }
 
 .pet-info__name::placeholder,
-.pet-info__weightweight::placeholder,
+.pet-info__weight::placeholder,
 .pet-info__age::placeholder,
 .owner-contacts__email::placeholder,
 .owner-contacts__phone::placeholder,
@@ -58,7 +58,7 @@ textarea::placeholder {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  color: $font-color__text;
+  color: $font-color__heading;
   text-transform: uppercase;
 }
 
@@ -172,8 +172,16 @@ textarea::placeholder {
   border-radius: 50%;
 }
 
-.program-request__contacts .container {
-  margin-top: 28px;
+.program-request__wrapper {
+  margin-bottom: 27px;
+}
+
+.container--contacts {
+  margin-bottom: 29px;
+}
+
+.container--options {
+  margin-top: 23px;
 }
 
 .owner-contacts__legend {
@@ -623,6 +631,18 @@ textarea::placeholder {
     font-size: 16px;
     line-height: 16px;
   }
+
+  .program-request__wrapper {
+    margin-bottom: 75px;
+  }
+
+  .container--contacts {
+    margin-bottom: 65px;
+  }
+
+  .container--options {
+    margin-top: 61px;
+  }
 }
 
 @media (min-width: $width__desktop) {
@@ -823,5 +843,17 @@ textarea::placeholder {
     margin-top: 29px;
     margin-left: 19px;
     width: 25%;
+  }
+
+  .program-request__wrapper {
+    margin-bottom: 50px;
+  }
+
+  .container--contacts {
+    margin-bottom: 67px;
+  }
+
+  .container--options {
+    margin-top: 63px;
   }
 }

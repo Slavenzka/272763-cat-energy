@@ -64,7 +64,7 @@
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="header-main__logo-image" src="img/logo-mobile.svg" width="33" height="38px" alt="Логотип магазина Cat Energy">
+              <img class="header-main__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Cat Energy">
             </picture>
             <h1 class="header-main__title logo-text">
               <span>
@@ -116,19 +116,19 @@
               </legend>
               <div class="container container--short">
                 <div class="pet-info__item-wrapper">
-                  <label for="name">
+                  <label for="cat-name">
                     Имя:*
                   </label>
                   <input class="pet-info__name" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
                 </div>
                 <div class="pet-info__item-wrapper">
-                  <label for="weight">
+                  <label for="cat-weight">
                     Вес (кг):*
                   </label>
                   <input class="pet-info__weight" id="cat-weight" type="number" name="cat-weight" placeholder="7">
                 </div>
                 <div class="pet-info__item-wrapper">
-                <label for="age">
+                <label for="cat-age">
                   Возраст (лет):
                 </label>
                 <input class="pet-info__age" id="cat-age" type="number" name="cat-age" placeholder="7">
@@ -155,14 +155,14 @@
               </div>
             </fieldset>
           </div>
-          <fieldset class="program-request__contacts owner-contacts">
-            <div class="container">
+          <div class="container container--contacts">
+            <fieldset class="program-request__contacts owner-contacts">
               <legend class="owner-contacts__legend">
                 Контактные данные (владельца кота)
               </legend>
               <div class="owner-contacts__wrapper">
                 <div class="owner-contacts__wrapper-item">
-                  <label for="mail">
+                  <label for="owner-mail">
                     E-mail:*
                   </label>
                   <input class="owner-contacts__email" id="owner-mail" type="email" name="owner-mail" placeholder="kuklachev@gmail.com">
@@ -171,27 +171,27 @@
                   </svg>
                 </div>
                 <div class="owner-contacts__wrapper-item">
-                  <label for="phone">
+                  <label for="owner-phone">
                     Телефон:*
                   </label>
-                  <input class="owner-contacts__phone" id="owner-phone" type="text" name="owner-phone" placeholder="8 (960) 900-60-90">
+                  <input class="owner-contacts__phone" id="owner-phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
                   <svg class="owner-contacts__icon-phone" width="20" height="20" viewbox="0 0 20 20">
                     <use xlink:href="#form-icon__phone"></use>
                   </svg>
                 </div>
               </div>
-            </div>
-          </fieldset>
-          <fieldset class="program-request__owner-comments owner-comments">
-            <div class="container">
+            </fieldset>
+          </div>
+          <div class="container container--comments">
+            <fieldset class="program-request__owner-comments owner-comments">
               <legend class="owner-comments__legend">
                 Комментарий
               </legend>
               <textarea placeholder="Расскажите обо всех повадках кота"></textarea>
-            </div>
-          </fieldset>
-          <fieldset class="program-request__options program-options">
-            <div class="container">
+            </fieldset>
+          </div>
+          <div class="container container--options">
+            <fieldset class="program-request__options program-options">
               <legend class="program-options__legend">
                 Дополнительно
               </legend>
@@ -213,8 +213,8 @@
                   Витамины
                 </label>
               </div>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
           <div class="container">
             <div class="program-options__wrapper-button">
               <button class="button button--submit" type="submit">
@@ -242,7 +242,7 @@
               ул. Большая Конюшенная, д. 19/8<span> </span>Санкт-Петербург
             </p>
           </div>
-          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CBUnrPx5XB" frameborder="0"></iframe>
+          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CBUnrPx5XB"></iframe>
         </div>
       </div>
       <div class="footer-main__content">
@@ -298,6 +298,7 @@
         </div>
       </div>
     </footer>
-
+<script src="js/picturefill.min.js">
+</script>
   </body>
 </html>
