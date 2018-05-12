@@ -665,6 +665,7 @@ textarea::placeholder {
   .program-request__wrapper {
     display: flex;
     margin: 0 auto;
+    margin-bottom: 50px;
     padding: 0;
     max-width: $width__desktop;
     box-sizing: border-box;
@@ -843,10 +844,6 @@ textarea::placeholder {
     margin-top: 29px;
     margin-left: 19px;
     width: 25%;
-  }
-
-  .program-request__wrapper {
-    margin-bottom: 50px;
   }
 
   .container--contacts {
