@@ -266,7 +266,7 @@
     margin-left: 0;
   }
 
-  .product-info__item:first-of-type ~ .product-info__item {
-    margin-left: 80px;
+  .product-info__item:not(:nth-of-type(4n)) {
+    margin-right: 80px;
   }
 }
