@@ -97,10 +97,6 @@
 }
 
 @media (min-width: $width__desktop) {
-  .social {
-    -ms-flex-align: center;
-  }
-
   .social__item {
     &--vk {
       margin-top: 7px;

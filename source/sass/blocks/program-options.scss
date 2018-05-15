@@ -202,6 +202,7 @@
 
   .program-options label:not(:last-of-type) {
     width: 200px;
+    margin-right: 125px;
   }
 
   .program-options label:first-of-type,
@@ -211,10 +212,6 @@
 
   .program-options label:nth-of-type(2n) {
     margin-left: 0;
-  }
-
-  .program-options label:not(:last-of-type) {
-    margin-right: 125px;
   }
 
   .program-request__wrapper-button {
