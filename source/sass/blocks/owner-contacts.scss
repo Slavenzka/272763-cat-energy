@@ -150,6 +150,10 @@
     margin-top: 20px;
   }
 
+  .owner-contacts__wrapper-item label {
+    padding-right: 19px;
+  }
+
   .owner-contacts__wrapper-item input {
     padding: 10px 45px 10px 20px;
     font-size: 20px;
@@ -213,6 +217,10 @@
   .owner-contacts__wrapper-item:last-of-type {
     margin-top: 0;
     margin-left: 78px;
+  }
+
+  .owner-contacts__wrapper-item label {
+    padding-right: 17px;
   }
 
   .owner-contacts__icon-mail {

@@ -101,6 +101,12 @@
   }
 }
 
+@media (min-width: $width__tablet) and (max-width: 1299px) {
+  .program-selection + .container {
+    border-bottom: 1px solid rgb(230, 230, 230);
+  }
+}
+
 @media (min-width: $width__desktop) {
   .program-selection {
     position: relative;
@@ -108,7 +114,7 @@
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: 720px 696px;
-    background-position: 100% 0;
+    background-position: 112% 0;
 
     @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
@@ -120,7 +126,7 @@
       top: 0;
       right: 0;
       height: 100%;
-      width: 50%;
+      width: 45%;
       background-color: rgb(101, 169, 60);
       z-index: -1;
     }
@@ -135,7 +141,7 @@
   }
 
   .program-selection__wrapper > .container {
-    padding-left: 190px;
+    padding-left: 120px;
     padding-right: 730px;
   }
 
@@ -149,7 +155,7 @@
 
   .program-selection__img {
     top: 142px;
-    left: calc(47% + 4px);
+    left: calc(48.5% - 1px);
     width: 552px;
     height: 499px;
     z-index: 0;

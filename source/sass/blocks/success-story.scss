@@ -190,7 +190,7 @@
 @media (min-width: $width__tablet) {
   .success-story {
     padding-bottom: 0;
-    margin-top: 27px;
+    margin-top: 26px;
     background-color: transparent;
   }
 
@@ -362,6 +362,7 @@
 
 @media (min-width: $width__desktop) {
   .success-story {
+    margin-top: 27px;
     padding-top: 37px;
     padding-bottom: 0;
   }

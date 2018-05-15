@@ -1,7 +1,7 @@
 .social {
   margin: 0;
   padding: 0;
-  min-height: 62px;
+  height: 62px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -97,6 +97,10 @@
 }
 
 @media (min-width: $width__desktop) {
+  .social {
+    -ms-flex-align: center;
+  }
+
   .social__item {
     &--vk {
       margin-top: 7px;

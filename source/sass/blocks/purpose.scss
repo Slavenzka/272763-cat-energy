@@ -1,6 +1,6 @@
 .purpose .container {
   padding: 26px 0 26px 65px;
-  margin-top: 9px;
+  margin-top: 8px;
   border: 1px solid rgb(237, 237, 237);
 }
 
@@ -9,13 +9,16 @@
 }
 
 .purpose input {
-  display: none;
+  position: absolute;
+  transform: translateX(-2000px);
 }
 
 .purpose label {
   position: relative;
   display: block;
   cursor: pointer;
+  padding-right: 20px;
+
 
   &::before {
     content: "";
@@ -26,6 +29,7 @@
     height: 30px;
     box-sizing: border-box;
     border-radius: 50%;
+    background-color: $background__main;
     border: 1px solid rgb(205, 205, 205);
   }
 
@@ -49,11 +53,14 @@
   border-radius: 50%;
 }
 
+.purpose input:focus + label {
+  outline: 2px solid $background__elements;
+}
+
 @media (min-width: $width__tablet) {
-  .purpose .container {
+  .purpose .container--short {
     margin-top: 52px;
-    padding: 33px 0 35px 89px;
-    width: 631px;
+    padding: 33px 0 35px 86px;
     border: 1px solid rgba(205, 205, 205, 0.5);
   }
 
@@ -64,7 +71,7 @@
   .purpose label {
     &::before {
       top: -9px;
-      left: -60px;
+      left: -59px;
       width: 40px;
       height: 40px;
     }
@@ -72,7 +79,7 @@
 
   .purpose input:checked + label::after {
     top: 2px;
-    left: -49px;
+    left: -48px;
     width: 18px;
     height: 18px;
   }
@@ -81,7 +88,7 @@
 @media (min-width: $width__desktop) {
   .purpose .container {
     margin-top: 0;
-    margin-left: 81px;
+    margin-left: 99px;
     padding: 33px 0 35px 86px;
     width: 570px;
   }

@@ -230,7 +230,7 @@
   }
 }
 
-@media (min-width: $width__tablet) and (max-width: 1439px) {
+@media (min-width: $width__tablet) and (max-width: 1299px) {
   .vendibles:not(:first-child):not(:nth-child(2)) {
     margin-top: 140px;
   }

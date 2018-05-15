@@ -148,16 +148,6 @@
       height: 1px;
       background-color: rgb(230, 230, 230);
     }
-
-    &:last-of-type::after {
-      content: "";
-      position: absolute;
-      top: 66px;
-      left: -50vw;
-      width: 150vw;
-      height: 1px;
-      background-color: rgb(230, 230, 230);
-    }
   }
 }
 
@@ -173,6 +163,7 @@
     position: relative;
     margin: 0;
     margin-top: 26px;
+    padding-left: 70px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;

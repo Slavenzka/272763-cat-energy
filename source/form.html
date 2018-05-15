@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -62,7 +63,7 @@
         <div class="header-main__wrapper">
           <a class="header-main__logo header-main__title-link" href="index.html">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="header-main__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Cat Energy">
             </picture>
@@ -140,15 +141,15 @@
                 Выберите тип программы
               </legend>
               <div class="container container--short">
-                <input class="purpose__slim" id="slim" type="radio" name="program-goal" checked>
+                <input class="purpose__slim visually-hidden--input" id="slim" type="radio" name="program-goal" checked>
                 <label for="slim">
                   Похудение
                 </label>
-                <input class="purpose__gain" id="gain" type="radio" name="program-goal">
+                <input class="purpose__gain visually-hidden--input" id="gain" type="radio" name="program-goal">
                 <label for="gain">
                   Набор массы
                 </label>
-                <input class="purpose__dunno" id="advice-request" type="radio" name="program-goal">
+                <input class="purpose__dunno visually-hidden--input" id="advice-request" type="radio" name="program-goal">
                 <label for="advice-request">
                   Не знаю (нужен ваш совет)
                 </label>
@@ -216,11 +217,11 @@
             </fieldset>
           </div>
           <div class="container">
-            <div class="program-options__wrapper-button">
+            <div class="program-request__wrapper-button">
               <button class="button button--submit" type="submit">
                 Отправить заявку
               </button>
-              <p class="program-options__required-fields">
+              <p class="program-request__required-fields">
                 * &mdash; Обязательные поля
               </p>
             </div>
@@ -298,7 +299,7 @@
         </div>
       </div>
     </footer>
-<script src="js/picturefill.min.js">
-</script>
+    <script src="js/picturefill.min.js">
+    </script>
   </body>
 </html>

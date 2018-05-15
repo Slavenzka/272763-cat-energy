@@ -27,7 +27,7 @@ body {
 @media (min-width: $width__tablet) {
   .container {
     padding: 0 $padding__tablet;
-    max-width: $width__tablet;
+    min-width: $width__tablet;
   }
 }
 

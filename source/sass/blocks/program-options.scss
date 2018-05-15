@@ -23,10 +23,12 @@
   margin-top: 21px;
   padding: 20px 0 39px 46px;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .program-options__wrapper input {
-  display: none;
+  position: absolute;
+  transform: translateX(-2000px);
 }
 
 .program-options__wrapper label:not(:last-of-type) {
@@ -34,6 +36,7 @@
 }
 
 .program-options input + label {
+  display: inline;
   position: relative;
   cursor: pointer;
 
@@ -68,7 +71,11 @@
   background-repeat: no-repeat;
 }
 
-.program-options__required-fields {
+.program-options input:focus + label {
+  outline: 2px solid $background__elements;
+}
+
+.program-request__required-fields {
   margin: 0;
   margin-top: 21px;
   margin-bottom: 32px;
@@ -114,6 +121,7 @@
   .program-options__wrapper {
     margin-top: 46px;
     padding-left: 99px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -151,7 +159,7 @@
     left: -50px;
   }
 
-  .program-options__wrapper-button {
+  .program-request__wrapper-button {
     padding-bottom: 73px;
     display: flex;
     flex-wrap: nowrap;
@@ -159,7 +167,7 @@
     height: 52px;
   }
 
-  .program-options__required-fields {
+  .program-request__required-fields {
     margin-top: 29px;
     margin-left: 44px;
     width: 30%;
@@ -192,8 +200,8 @@
     width: 100%;
   }
 
-  .program-options label {
-    width: 245px;
+  .program-options label:not(:last-of-type) {
+    width: 200px;
   }
 
   .program-options label:first-of-type,
@@ -206,14 +214,14 @@
   }
 
   .program-options label:not(:last-of-type) {
-    margin-right: 80px;
+    margin-right: 125px;
   }
 
-  .program-options__wrapper-button {
+  .program-request__wrapper-button {
     padding-bottom: 82px;
   }
 
-  .program-options__required-fields {
+  .program-request__required-fields {
     margin-top: 29px;
     margin-left: 19px;
     width: 25%;
